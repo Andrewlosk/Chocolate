@@ -39,4 +39,32 @@
     line-height: 18px;
     letter-spacing: -0.28px;
   }
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    list-style-type: none;
+  }
+  &__item-p {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: -0.28px;
+    text-transform: uppercase;
+  }
+  &__item-p:nth-child(1) {
+    color: #fff;
+  }
+  &__item-p:nth-child(2) {
+    color: #111;
+  }
+  &__item-p:nth-child(3) {
+    color: #fff;
+  }
+  &__item-p:nth-child(4) {
+    color: #111;
+  }
 }

@@ -1,20 +1,88 @@
-<section class="add">
-  <div class="container">
-    <h3 class="add__title">
-      IT ALL ADDS UP TO ONE <br />
-      EXCEPTIONAL <span class="add__span">TASTE</span> SENSATION
-    </h3>
-    <p class="add__p">
-      At Simply Chocolate, we believe that the secret to exceptional chocolate
-      is in the details. From the sourcing of the finest ingredients to the
-      careful crafting of each individual piece, every step of our process adds
-      up to one exceptional taste sensation.
-    </p>
-    <ul class="add__list">
-      <li class="add__item"><img class="add__img" src="" alt="" /></li>
-      <li class="add__item"><img class="add__img" src="" alt="" /></li>
-      <li class="add__item"><img class="add__img" src="" alt="" /></li>
-      <li class="add__item"><img class="add__img" src="" alt="" /></li>
-    </ul>
-  </div>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700&family=Raleway:wght@200;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../css/index.min.css" />
+  </head>
+  <body>
+    <section class="add">
+      <div class="container">
+        <h3 class="add__title">
+          IT ALL ADDS UP TO ONE <br />
+          EXCEPTIONAL <span class="add__span">TASTE</span> SENSATION
+        </h3>
+        <p class="add__p">
+          At Simply Chocolate, we believe that the secret to exceptional
+          chocolate is in the details. From the sourcing of the finest
+          ingredients to the careful crafting of each individual piece, every
+          step of our process adds up to one exceptional taste sensation.
+        </p>
+        <ul class="add__list">
+          <li class="add__item">
+            <picture
+              ><source
+                srcset="
+                  ../images/chocolate1x.png 1x,
+                  ../images/chocolate2x.png 2x,
+                  ../images/chocolate3x.png 3x
+                " />
+              <img
+                class="add__img"
+                src="../images/chocolate1x.png"
+                alt="chocolate"
+            /></picture>
+            <p class="add__item-p">MILK CHOCOLATE</p>
+          </li>
+
+          <li class="add__item">
+            <picture
+              ><source
+                srcset="
+                  ../images/milk1x.png 1x,
+                  ../images/milk2x.png 2x,
+                  ../images/milk3x.png 3x
+                " />
+              <img class="add__img" src="../images/milk1x.png" alt="milk"
+            /></picture>
+            <p class="add__item-p">Milk</p>
+          </li>
+          <li class="add__item">
+            <picture
+              ><source
+                srcset="
+                  ../images/nuts1x.png 1x,
+                  ../images/nuts2x.png 2x,
+                  ../images/nuts3x.png 3x
+                " />
+              <img class="add__img" src="../images/nuts1x.png" alt="nuts"
+            /></picture>
+            <p class="add__item-p">nuts</p>
+          </li>
+          <li class="add__item">
+            <picture
+              ><source
+                srcset="
+                  ../images/spots1x.png 1x,
+                  ../images/spots2x.png 2x,
+                  ../images/spots3x.png 3x
+                " />
+              <img
+                class="add__img"
+                src="../images/spots1x.png"
+                alt="chocolate spots"
+            /></picture>
+            <p class="add__item-p">sEMI - SWEET CHOCOLATE</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>
