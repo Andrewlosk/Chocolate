@@ -1,3 +1,2 @@
-@import './common';
-@import './add_chocolate';
-@import './example';
+@import './utils/colors', './utils/general', './utils/mixin',
+  './components/sellers', './components/add_chocolate';
