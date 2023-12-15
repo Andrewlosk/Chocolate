@@ -100,64 +100,7 @@
     border: 1px solid #fd9222;
     background: #fff;
   }
-  &__img {
-    margin-left: 28px;
-    margin-top: 28px;
-  }
-  &__overlay {
-    background-color: #fff;
-    border-radius: 15px;
-    width: 100%;
-    height: 100%;
-  }
-  &__subtitle {
-    color: #111;
-    font-family: Montserrat;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: -0.54px;
-    text-transform: uppercase;
-    margin-top: 28px;
-    margin-left: 28px;
-  }
-  &__buttons {
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    gap: 6px;
-  }
-  &__button-a a {
-    color: #fff;
-    font-family: Montserrat;
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 12px;
-    text-decoration: none;
-    padding: 6px 16px;
-  }
-  &__button-a {
-    border-radius: 35px;
-    background: #fd9222;
-    border: none;
-  }
-  &__button-a a {
-    color: #fff;
-    font-family: Montserrat;
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 12px;
-    text-decoration: none;
-    padding: 6px 16px;
-  }
-  &__button-a {
-    border-radius: 35px;
-    background: #fd9222;
-    border: none;
-  }
+
   &__overlay {
     border-radius: 15px;
     background: #fff;
