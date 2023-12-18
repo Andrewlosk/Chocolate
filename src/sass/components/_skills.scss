@@ -1,4 +1,7 @@
 .skill {
+  background: #fafafa;
+  padding: 125px 0 41px;
+
   &__title {
     color: #111;
     text-align: center;
@@ -9,6 +12,7 @@
     line-height: 28px; /* 116.667% */
     letter-spacing: -0.72px;
     text-transform: uppercase;
+    margin: 0;
   }
   &__title span {
     color: #fd9222;
@@ -22,10 +26,51 @@
   }
   &__div-rec {
     color: #111;
-font-family: Montserrat;
-font-size: 18px;
-font-style: normal;
-font-weight: 600;
-line-height: 24px; /* 133.333% */
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    margin: 15px;
+    margin-bottom: 28px;
+  }
+
+  &__list {
+    list-style-type: disc;
+    display: flex;
+    width: 452px;
+    height: 260px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    margin: 0;
+  }
+  &__items {
+    color: #111;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 128.571% */
+    letter-spacing: -0.28px;
+  }
+  &__group {
+    display: flex;
+    width: 516px;
+
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    border-radius: 15px;
+    background: #fff;
+  }
+  &__div {
+    display: flex;
+    width: 1136px;
+    height: 478px;
+    align-items: center;
+    gap: 50px;
   }
 }
