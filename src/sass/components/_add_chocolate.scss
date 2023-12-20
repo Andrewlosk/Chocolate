@@ -47,7 +47,17 @@
     list-style-type: none;
     gap: 36px;
     margin-top: 50px;
-    @media (min-width: 320px;) {
+    @media (min-width: 320px) {
+      flex-direction: column;
+      flex-direction: nowrap;
+    }
+    @media (min-width: 768px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    @media (min-width: 1200px) {
+      flex-direction: row;
+      flex-wrap: nowrap;
     }
   }
   &__item-pb {
@@ -120,6 +130,7 @@
     opacity: 0;
     transition: 0.5s;
     margin-top: -260px;
+
     // z-index: 1000;
   }
   &__subtitle {
