@@ -1,4 +1,4 @@
-6831
+6834
 113C:\Users\Nazariy\Desktop\Chocolate\node_modules\@parcel\optimizer-svgo\node_modules\mdn-data\css\definitions.json133471360695241491 0
 75C:\Users\Nazariy\Desktop\Chocolate\node_modules\ordered-binary\package.json133471360699414871 0
 65C:\Users\Nazariy\Desktop\Chocolate\node_modules\js-tokens\LICENSE133469612979991746 0
@@ -105,7 +105,7 @@
 91C:\Users\Nazariy\Desktop\Chocolate\node_modules\caniuse-lite\data\features\web-bluetooth.js133471360724965370 0
 44C:\Users\Nazariy\Desktop\Chocolate\.parcelrc133468746268226601 0
 85C:\Users\Nazariy\Desktop\Chocolate\node_modules\css-tree\cjs\syntax\config\parser.cjs133471360711597453 0
-61C:\Users\Nazariy\Desktop\Chocolate\dist\index.975ef6c8.js.map133475652460003877 0
+61C:\Users\Nazariy\Desktop\Chocolate\dist\index.975ef6c8.js.map133475660005194224 0
 132C:\Users\Nazariy\Desktop\Chocolate\node_modules\@parcel\optimizer-svgo\node_modules\css-select\lib\pseudo-selectors\pseudos.d.ts.map133471360699099501 0
 85C:\Users\Nazariy\Desktop\Chocolate\node_modules\@parcel\runtime-js\src\helpers\worker133471360731465536 1
 70C:\Users\Nazariy\Desktop\Chocolate\node_modules\@parcel\transformer-js133471360723154198 1
@@ -144,7 +144,7 @@
 79C:\Users\Nazariy\Desktop\Chocolate\node_modules\csso\cjs\replace\Percentage.cjs133471360708559321 0
 72C:\Users\Nazariy\Desktop\Chocolate\node_modules\@swc\helpers\_\_inherits133471360720372700 1
 62C:\Users\Nazariy\Desktop\Chocolate\node_modules\pinkie-promise133469612979777290 1
-39C:\Users\Nazariy\Desktop\Chocolate\dist133475652460003877 1
+39C:\Users\Nazariy\Desktop\Chocolate\dist133475660005204168 1
 66C:\Users\Nazariy\Desktop\Chocolate\node_modules\picocolors\LICENSE133469612976680630 0
 89C:\Users\Nazariy\Desktop\Chocolate\node_modules\csso\node_modules\mdn-data\css\types.json133471360754363466 0
 84C:\Users\Nazariy\Desktop\Chocolate\node_modules\htmlparser2\lib\FeedHandler.d.ts.map133469612983456457 0
@@ -243,7 +243,7 @@
 96C:\Users\Nazariy\Desktop\Chocolate\node_modules\lmdb\node_modules\node-addon-api\tools\README.md133471360753038584 0
 109C:\Users\Nazariy\Desktop\Chocolate\node_modules\@parcel\optimizer-svgo\node_modules\svgo\dist\svgo.browser.js133471360705828943 0
 75C:\Users\Nazariy\Desktop\Chocolate\node_modules\mdn-data\css\selectors.json133471360702442625 0
-49C:\Users\Nazariy\Desktop\Chocolate\src\index.html133474879308307677 0
+49C:\Users\Nazariy\Desktop\Chocolate\src\index.html133475659991815620 0
 76C:\Users\Nazariy\Desktop\Chocolate\node_modules\fast-glob\out\types\index.js133471360704788672 0
 76C:\Users\Nazariy\Desktop\Chocolate\node_modules\fast-glob\out\utils\errno.js133471360704417529 0
 67C:\Users\Nazariy\Desktop\Chocolate\node_modules\css-tree\cjs\syntax133471360710762904 1
@@ -1446,6 +1446,7 @@
 66C:\Users\Nazariy\Desktop\Chocolate\node_modules\msgpackr\unpack.js133471360706493142 0
 85C:\Users\Nazariy\Desktop\Chocolate\node_modules\source-map\lib\source-map-consumer.js133469612984671035 0
 90C:\Users\Nazariy\Desktop\Chocolate\node_modules\caniuse-lite\data\features\css-autofill.js133471360709870142 0
+65C:\Users\Nazariy\Desktop\Chocolate\dist\1xsell_choc3.3ebe532a.png133475660004367024 0
 86C:\Users\Nazariy\Desktop\Chocolate\node_modules\@parcel\core\lib\public\BundleGraph.js133471360745219885 0
 82C:\Users\Nazariy\Desktop\Chocolate\node_modules\@parcel\utils\test\input\sourcemap133471360727452495 1
 83C:\Users\Nazariy\Desktop\Chocolate\node_modules\lmdb\dependencies\lz4\lib\lz4file.h133471360710407570 0
@@ -1829,7 +1830,7 @@
 89C:\Users\Nazariy\Desktop\Chocolate\node_modules\reusify\benchmarks\reuseNoCodeFunction.js133469612983955958 0
 73C:\Users\Nazariy\Desktop\Chocolate\node_modules\resolve-from\package.json133469612976670628 0
 75C:\Users\Nazariy\Desktop\Chocolate\node_modules\regenerator-runtime\LICENSE133471360695350699 0
-58C:\Users\Nazariy\Desktop\Chocolate\dist\index.b07a87f3.css133475652459846452 0
+58C:\Users\Nazariy\Desktop\Chocolate\dist\index.b07a87f3.css133475660004548841 0
 83C:\Users\Nazariy\Desktop\Chocolate\node_modules\dom-serializer\lib\esm\package.json133469612982604293 0
 80C:\Users\Nazariy\Desktop\Chocolate\node_modules\regenerator-runtime\package.json133471360697099123 0
 83C:\Users\Nazariy\Desktop\Chocolate\node_modules\css-tree\cjs\syntax\atrule\page.cjs133471360711442085 0
@@ -2114,6 +2115,7 @@
 77C:\Users\Nazariy\Desktop\Chocolate\node_modules\path-is-absolute\package.json133469612976732243 0
 79C:\Users\Nazariy\Desktop\Chocolate\node_modules\css-tree\lib\syntax\node\CDO.js133471360712530846 0
 67C:\Users\Nazariy\Desktop\Chocolate\node_modules\path-exists\license133469612979948011 0
+65C:\Users\Nazariy\Desktop\Chocolate\dist\1xsell_choc2.da6cd4a9.png133475660004397037 0
 92C:\Users\Nazariy\Desktop\Chocolate\node_modules\dom-serializer\lib\esm\foreignNames.d.ts.map133469612983531377 0
 82C:\Users\Nazariy\Desktop\Chocolate\node_modules\caniuse-lite\data\features\midi.js133471360720011192 0
 120C:\Users\Nazariy\Desktop\Chocolate\node_modules\msgpackr-extract\node_modules\node-gyp-build-optional-packages\README.md133471360751255294 0
@@ -5337,7 +5339,7 @@
 102C:\Users\Nazariy\Desktop\Chocolate\node_modules\@swc\helpers\_\_skip_first_generator_next\package.json133471360721061469 0
 93C:\Users\Nazariy\Desktop\Chocolate\node_modules\@swc\helpers\_\_set_prototype_of\package.json133471360721000990 0
 104C:\Users\Nazariy\Desktop\Chocolate\node_modules\@swc\helpers\_\_possible_constructor_return\package.json133471360720950939 0
-50C:\Users\Nazariy\Desktop\Chocolate\dist\index.html133475652459791234 0
+50C:\Users\Nazariy\Desktop\Chocolate\dist\index.html133475660004929542 0
 108C:\Users\Nazariy\Desktop\Chocolate\node_modules\@swc\helpers\_\_object_without_properties_loose\package.json133471360720883356 0
 109C:\Users\Nazariy\Desktop\Chocolate\node_modules\@parcel\optimizer-htmlnano\node_modules\svgo\lib\css-tools.js133471360699985175 0
 102C:\Users\Nazariy\Desktop\Chocolate\node_modules\@swc\helpers\_\_object_without_properties\package.json133471360720903358 0
@@ -6316,7 +6318,7 @@
 126C:\Users\Nazariy\Desktop\Chocolate\node_modules\@parcel\optimizer-svgo\node_modules\css-select\lib\pseudo-selectors\filters.js133471360693078986 0
 126C:\Users\Nazariy\Desktop\Chocolate\node_modules\@parcel\optimizer-svgo\node_modules\css-select\lib\pseudo-selectors\index.d.ts133471360700829982 0
 130C:\Users\Nazariy\Desktop\Chocolate\node_modules\@parcel\optimizer-svgo\node_modules\css-select\lib\pseudo-selectors\index.d.ts.map133471360698685154 0
-57C:\Users\Nazariy\Desktop\Chocolate\dist\index.975ef6c8.js133475652459963881 0
+57C:\Users\Nazariy\Desktop\Chocolate\dist\index.975ef6c8.js133475660005144183 0
 128C:\Users\Nazariy\Desktop\Chocolate\node_modules\@parcel\optimizer-svgo\node_modules\css-select\lib\pseudo-selectors\pseudos.d.ts133471360701044819 0
 91C:\Users\Nazariy\Desktop\Chocolate\node_modules\@parcel\core\src\requests\PackageRequest.js133471360746382542 0
 126C:\Users\Nazariy\Desktop\Chocolate\node_modules\@parcel\optimizer-svgo\node_modules\css-select\lib\pseudo-selectors\pseudos.js133471360694811318 0
@@ -6826,7 +6828,8 @@
 61C:\Users\Nazariy\Desktop\Chocolate\node_modules\.bin\sass.cmd133471361016193272 0
 61C:\Users\Nazariy\Desktop\Chocolate\node_modules\.bin\sass.ps1133471361016158744 0
 79C:\Users\Nazariy\Desktop\Chocolate\node_modules\.bin\update-browserslist-db.ps1133471361016238322 0
-62C:\Users\Nazariy\Desktop\Chocolate\dist\index.b07a87f3.css.map133475652459906448 0
+65C:\Users\Nazariy\Desktop\Chocolate\dist\1xsell_choc1.bca2a08b.png133475660004904447 0
+62C:\Users\Nazariy\Desktop\Chocolate\dist\index.b07a87f3.css.map133475660004588915 0
 67C:\Users\Nazariy\Desktop\Chocolate\assets\actions-config-step-2.png133468746268404379 0
 52C:\Users\Nazariy\Desktop\Chocolate\.github\workflows133468746267601414 1
 63C:\Users\Nazariy\Desktop\Chocolate\.github\workflows\deploy.yml133468746267601414 0
