@@ -5,7 +5,7 @@
         <div class="sellers__block">
             <ul class="sellers__imglist">
                 <li class="sellers__item">
-                    <!-- <img srcset="./images/sellers/1xsell_choc1.png " alt="chocolate" class="sellers__img"> -->
+
                     <picture>
                         <source
                           media="(min-width: 1200px)"
@@ -36,12 +36,12 @@
                     </picture>   
                 </li>
 
-                <li class="sellers__item">
+                <li class="sellers__item sellers__mobdesk__item">
                     <p class="sellers__mobdesk">Crazy enough chocolate originates from a bean just like the coffee bean called Cacao. Cacao has been around for thousands of years and was first discovered by the Native American tribe called the Mayans.</p>
                 </li>
                 
                 <li class="sellers__item">
-                    <!-- <img srcset="./images/sellers/1xsell_choc2.png " alt="chocolate" class="sellers__img"> -->
+
                     <picture>
                         <source
                           media="(min-width: 1200px)"
@@ -71,9 +71,11 @@
                         />
                     </picture>  
                 </li>
-                <li></li>
-                <li class="sellers__item ">
-                    <!-- <img class="sellers__img sellers__img3" src="./images/sellers/1xsell_choc3.png" alt="chocolate" > -->
+                <li class="sellers__mobbtn">
+                  <button class="sellers__btn ">Buy now</button>
+                </li>
+                <li class="sellers__item sellers__img3">
+
                     <picture>
                         <source
                           srcset="
@@ -85,7 +87,7 @@
                         <img
                           src="./images/sellers/1xsell_choc3.png"
                           alt="chocolate1"
-                          class="sellers__img sellers__img3"
+                          class="sellers__img"
                         />
                     </picture>  
                 </li>
@@ -93,9 +95,47 @@
 
             <div class="sellers__2block">
                 <p class="sellers__desk">Crazy enough chocolate originates from a bean just like the coffee bean called Cacao. Cacao has been around for thousands of years and was first discovered by the Native American tribe called the Mayans.</p>
-                <button class="sellers__btn">Buy now</button>
+                <button class="sellers__btn ">Buy now</button>
             </div>
         </div>
     </div>
 
 </section>
+
+
+<div class="sellers__overlay">
+  <div class=" sellers__modal">
+
+    <button class="sellers__modal__cbtn"><img src="./images/sellersico/close-modal.svg" alt="close"></button>
+
+    <h2 class="sellers__title sellers__modal__title"><span class="sellers__span">bUY</span> nOW</h2>
+
+
+    <ul class="sellers__modal__imglist">
+      <li class="sellers__modal__item">
+        <img src="./images/sellers/1choc_modal.png" alt="chocolate">
+        <div class="sellers__modal__weightblock">
+          <p class="sellers__modal__weight">100 g</p>
+        </div>
+      </li>
+      <li class="sellers__modal__item">
+        <img src="./images/sellers/2choc_modal.png" alt="chocolate">
+        <div class="sellers__modal__weightblock">
+          <p class="sellers__modal__weight">200 g</p>
+        </div>
+      </li>
+      <li class="sellers__modal__item">
+        <img src="./images/sellers/3choc_modal.png" alt="chocolate">
+        <div class="sellers__modal__weightblock">
+          <p class="sellers__modal__weight">300 g</p>
+        </div>
+      </li>
+    </ul>
+<!-- 
+    <div class="sellers__modal__formgroup">
+
+
+    </div> -->
+
+  </div>
+</div>
