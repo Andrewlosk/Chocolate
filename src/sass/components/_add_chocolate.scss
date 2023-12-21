@@ -44,7 +44,7 @@
     align-items: center;
     justify-content: center;
     list-style-type: none;
-    gap: 36px;
+    gap: 19px;
     margin-top: 50px;
     @media (min-width: 320px) {
       flex-direction: column;
@@ -53,10 +53,12 @@
     @media (min-width: 768px) {
       flex-direction: row;
       flex-wrap: wrap;
+      width: 704px;
     }
     @media (min-width: 1200px) {
       flex-direction: row;
       flex-wrap: nowrap;
+      width: 1138px;
     }
   }
   &__item-pb {
@@ -123,7 +125,7 @@
   }
 
   &__overlay {
-    padding: 28px 0 0 28px;
+    padding: 10px 0 0 28px;
     top: 0;
     position: absolute;
     background-color: #fff;
@@ -197,11 +199,24 @@
     line-height: 18px;
     letter-spacing: -0.28px;
     height: 146px;
+    width: 214px;
     padding-bottom: 28px;
+    @media (min-width: 320px) {
+      width: 280px;
+    }
+    @media (min-width: 1200px) {
+      width: 214px;
+    }
   }
   &__img {
     margin-left: 28px;
     margin-top: 28px;
+    @media (min-width: 320px) {
+      margin-left: 56px;
+    }
+    @media (min-width: 1200px) {
+      margin-left: 28px;
+    }
   }
 
   &__item:hover &__overlay {
