@@ -14,8 +14,8 @@
   pointer-events: all;
 }
 
-.modal-sellers {
-  position: absolute;
+.modal {
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -68,8 +68,13 @@
     line-height: normal;
   }
   &__imglist {
-    display: flex;
-    gap: 16px;
+    @media (min-width:320px){
+      display: none;
+    }
+    @media (min-width:768px){
+      display: flex;
+      gap: 16px;
+    }
   }
   &__namelable {
     // margin-top: 40px;
@@ -217,5 +222,17 @@
     background: #fafafa;
     width: 2px;
     border-radius: 10px;
+  }
+
+
+  &__moblist{
+    display: flex;
+  }
+  &__img{
+    width: 167px;
+    height: 148px;
+  }
+  &__mobitem{
+    padding: 32px 32px 28px 32px;
   }
 }
