@@ -1,58 +1,185 @@
 .order {
-  @media (min-device-pixel-ratio: 2),
+  backdrop-filter: (30%);
+  width: 100%;
+  position: relative;
+  padding: 74px 0 74px 0;
+  background: url(../images/img/order-bg1x.png) center/cover no-repeat;
+  .container {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  /* @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .order {
-      background-image: url(../images/img/order-bg2x.png);
-      @media (max-width:480px) {
-        height: 370px ;
-        width: 100%;
-      }
-      @media (max-width:768px) {
-        height: 370px ;
-        width: 100%;
-      }
-      @media (max-width:2000px) {
-        height: 370px ;
-        width: 100%;
-      }
+    background-image: url(../images/img/order-bg2x.png);
+    @media (max-width: 480px) {
+      height: 370px;
+      width: 100%;
+    }
+    @media (max-width: 768px) {
+      height: 370px;
+      width: 100%;
+    }
+    @media (max-width: 2000px) {
+     
+      width: 100%;
+    }
+  } */
+  &__titel {
+    @include titel(24px, #fff);
+    text-align: center;
+    @media (max-width: 480px) {
+      font-size: 20px;
     }
   }
-  &__titel {
-    color: #fff;
-
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 28px; /* 116.667% */
-    letter-spacing: -0.72px;
-    text-transform: uppercase;
-  }
   &__desc {
-    color: #fff;
-
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 18px; /* 128.571% */
-    letter-spacing: -0.28px;
+    @include desc(18px, #fff);
   }
   &__btn {
-    color: #fff;
-width: 175px;
-height: 50px;
-    font-family: Montserrat;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
+    cursor: pointer;
+    @include desc(18px, #fff);
+    padding: 14px 40px;
     border: 0;
     border-radius: 100px;
     background: #fd9222;
+    @media (max-width: 480px) {
+      font-size: 14px;
+      padding: 12px 28px;
+    }
+    @media (max-width: 768px) {
+      font-size: 18px;
+      padding: 12px 28px;
+    }
+  }
+  &__span {
+    color: #fd9222;
+  }
+  &__modal {
+    padding: 40px;
+    position: relative;
+    width: 517px;
+    height: 631px;
+    border-radius: 15px;
+    background: #fafafa;
+    @media (max-width: 480px) {
+      width: 311px;
+      height: 471px;
+    }
+  }
+  .review__pop {
+    border-radius: 13px;
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    padding: 17px 24px;
+    align-items: center;
+    width: 90%;
+    background: #fff;
+    display: flex;
+    /*    @media (max-width:480px) {
+      
+    } */
+    display: block;
+    padding-right: 10px;
+    position: fixed;
+    top: 50%;
+    width: 516px;
+    height: 414px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    img {
+      position: absolute;
+      top: 96px;
+      left: 0;
+    }
+    &__from {
+      display: flex;
+      justify-content: flex-end;
+      padding-top: 160px;
+    }
+    width: 516px;
+    height: 414px;
+    border-radius: 15px;
+    background: #fd9222;
+    position: absolute;
+    &__close {
+      border-radius: 100%;
+      border: 0;
+      right: 24px;
+      position: absolute;
+      top: 24px;
+      span {
+        color: #fd9222;
+      }
+    }
+    &__titel {
+      @include titel(24px, #fff);
+    }
+    &__desc {
+      @include desc(18px, #fff);
+    }
+  }
+  &__subpop {
+    display: block;
+
+    position: fixed;
+    border-radius: 15px;
+    background: #fafafa;
+    top: 50%;
+    width: 516px;
+    height: 414px;
+
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    &__block {
+      padding: 40px;
+    }
+    &__input {
+      border-radius: 30px;
+      border: 1.5px solid rgba(17, 17, 17, 0.05);
+      width: 100%;
+      @include subpop__input;
+      padding: 14px 24px;
+    }
+    &__btn {
+      border-radius: 100px;
+      background: #fd9222;
+      padding: 17px 40px;
+      color: #fff;
+      font-family: Montserrat;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      border: 0;
+    }
+    &__from {
+      display: flex;
+      align-items: center;
+    }
+    img {
+      width: 100%;
+    }
+    &__close {
+      border-radius: 100%;
+      border: 0;
+      right: 24px;
+      position: absolute;
+      top: 24px;
+      background: 0;
+      span {
+        color: #ffffff;
+      }
+    }
+
+    &__titel {
+      @include titel(24px, #111);
+    }
+    &__span {
+      color: #fd9222;
+    }
   }
 }
