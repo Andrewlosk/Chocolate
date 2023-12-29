@@ -1,13 +1,20 @@
 .container {
   margin: 0 auto;
   @media (min-width: 320px) {
+    max-width: 370px;
     padding: 0 20px;
   }
   @media (min-width: 768px) {
+    max-width: 768px;
     padding: 0 32px;
+  }
+  @media (min-width: 1200px) {
+    max-width: 1450px;
+    padding: 0 69px;
   }
 }
 .add {
+  padding-top: ;
   &__title {
     color: #111;
     font-family: Montserrat;
@@ -89,6 +96,7 @@
   &__item {
     position: relative;
     display: block;
+    box-sizing: border-box;
     @media (min-width: 320px) {
       width: 335px;
       height: 270px;
