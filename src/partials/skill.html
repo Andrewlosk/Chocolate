@@ -1,15 +1,21 @@
 <section class="skill">
     <div class="container">
-      <h5 class="skill__title">hOW IT’S <span>made?</span></h5>
+      <div class="skill__main">
+        <h5 class="skill__title">hOW IT’S <span>made?</span></h5>
     <div class="skill__div">
         
-        <div class="skill__position">
+        <!-- <div class="skill__position">
           <picture>
             <source srcset="./images/skills/video1x.png 1x,
             ./images/skills/video2x.png 2x">
             <img class="skill__image" src="./images/skills/video1x.png" alt="video">
             
           </picture>
+        </div> -->
+        <div class="skill__video">
+          <video data-setup="{}" controls preload="auto" poster="./images/skills/video2x.png" id="my-video" class="video-js vjs-theme-forest">
+            <source src="./images/skills/how-it's-made-Chocolate.mp4" type="video/m4">
+          </video>
         </div>
         <svg class="skill__play" xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
           <path d="M15 33V12L35 22.5L15 33Z" fill="#F5F4F4"/>
@@ -26,6 +32,7 @@
         </ul>
         </div>
     </div>
+      </div>
     <div class="skill__block"></div>
     </div>
 </section>
