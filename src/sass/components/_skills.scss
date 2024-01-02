@@ -52,12 +52,9 @@
 
     @media (max-width: 320px) {
       width: 307px;
-height:324px;
-gap: 18px;
-
+      height: 324px;
+      gap: 18px;
     }
-
-
   }
   &__items {
     color: #111;
@@ -72,7 +69,7 @@ gap: 18px;
     display: flex;
     width: 516px;
 
-    padding: 15px;
+    padding: 32px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -83,20 +80,29 @@ gap: 18px;
       width: 335px;
       height: 456px;
 
-      //   display: flex;
-      //   padding: 20px 14px;
-      //   flex-direction: column;
-      //   justify-content: center;
-      //   align-items: center;
+      display: flex;
+      padding: 20px 14px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
   }
   &__div {
     display: flex;
     position: relative;
     align-items: center;
-    gap: 50px;
+    gap: 10px;
+
     @media (max-width: 768px) {
       flex-direction: column;
+    }
+    @media (max-width: 320px) {
+      display: flex;
+      width: 335px;
+      height: 976px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
     }
   }
   &__block {
@@ -108,8 +114,8 @@ gap: 18px;
     }
   }
   &__play {
-    position: absolute;
-    left: 23%;
+    // position: absolute;
+    // left: 23%;
     @media (max-width: 768px) {
       left: 47%;
       bottom: 74%;
@@ -117,10 +123,10 @@ gap: 18px;
   }
   &__position {
     position: relative;
-    @media (max-width:320px) {
+    @media (max-width: 320px) {
       height: 500px;
-    border-radius: 15px;
-    overflow: hidden;
+      border-radius: 15px;
+      overflow: hidden;
     }
   }
   &__main {
@@ -136,6 +142,16 @@ gap: 18px;
 }
 picture {
   height: 100%;
-    display: inline-block;
-    vertical-align: middle;
+  display: inline-block;
+  vertical-align: middle;
+}
+video {
+  border-radius: 15px;
+  width: 600px;
+  height: 400px;
+
+  @media (max-width: 320px) {
+    width: 335px;
+    height: 500px;
+  }
 }
