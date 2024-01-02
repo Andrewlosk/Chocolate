@@ -1,20 +1,5 @@
-.container {
-  margin: 0 auto;
-  @media (min-width: 320px) {
-    max-width: 370px;
-    padding: 0 20px;
-  }
-  @media (min-width: 768px) {
-    max-width: 768px;
-    padding: 0 32px;
-  }
-  @media (min-width: 1200px) {
-    max-width: 1450px;
-    padding: 0 69px;
-  }
-}
 .add {
-  padding: 128px 0;
+  padding-top: 72px;
   &__title {
     color: #111;
     font-family: Montserrat;
@@ -25,6 +10,20 @@
     letter-spacing: -0.72px;
     text-transform: uppercase;
     text-align: center;
+  }
+  &__subtitle {
+    color: #ffff;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px; /* 128.571% */
+    letter-spacing: -0.28px;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 28px;
+    left: 28px;
+    margin: 0;
   }
   &__span {
     color: #fd9222;
@@ -90,15 +89,20 @@
     line-height: 18px;
     letter-spacing: -0.28px;
     text-transform: uppercase;
-    margin-top: 36px;
-    margin-left: 28px;
+
+    position: absolute;
+    bottom: 28px;
+    left: 28px;
   }
   &__item {
     position: relative;
     display: block;
     box-sizing: border-box;
+    &:nth-child(even) .add__subtitle {
+      color: #111;
+    }
     @media (min-width: 320px) {
-      width: 335px;
+      width: 100%;
       height: 270px;
     }
     @media (min-width: 768px) {
@@ -133,7 +137,7 @@
   }
 
   &__overlay {
-    padding: 10px 0 0 28px;
+    padding: 28px;
     top: 0;
     position: absolute;
     background-color: #fff;
@@ -146,7 +150,7 @@
     left: 0;
     border: 1px solid #fd9222;
   }
-  &__subtitle {
+  &__headline {
     color: #111;
     font-family: Montserrat;
     font-size: 18px;
@@ -156,80 +160,59 @@
     letter-spacing: -0.54px;
     text-transform: uppercase;
     white-space: nowrap;
+    margin: 0;
   }
+
   &__buttons {
     display: flex;
     align-items: center;
     justify-content: left;
     flex-direction: row;
     gap: 6px;
+    margin-top: 8px;
   }
-  &__button-a a {
+  &__button {
     color: #fff;
     font-family: Montserrat;
     font-size: 10px;
     font-style: normal;
     font-weight: 400;
-    line-height: 12px;
-    text-decoration: none;
-  }
-  &__button-a {
-    border-radius: 35px;
+    line-height: 12px; /* 120% */
     background: #fd9222;
     padding: 6px 16px;
     border: none;
-  }
-  &__button-p a {
-    color: #fd9222;
-    font-family: Montserrat;
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 12px;
-    text-decoration: none;
-  }
-  &__button-p {
-    padding: 6px 16px;
     border-radius: 35px;
-    border: 1px solid #fd9222;
-    background: #fafafa;
+    &:nth-child(2) {
+      background: transparent;
+      color: #111;
+      border: 1px solid #fd9222;
+    }
   }
 
   &__card-p {
-    overflow: hidden;
     color: #111;
-    text-overflow: ellipsis;
-    white-space: nowrap;
     font-family: Montserrat;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 18px;
     letter-spacing: -0.28px;
-    height: 146px;
-    width: 214px;
-    padding-bottom: 28px;
-    @media (min-width: 320px) {
-      width: 280px;
-    }
-    @media (min-width: 1200px) {
-      width: 214px;
-    }
+    overflow: hidden;
   }
   &__img {
-    margin-left: 28px;
-    margin-top: 28px;
-    @media (min-width: 320px) {
-      margin-left: 56px;
-    }
-    @media (min-width: 1200px) {
-      margin-left: 28px;
-    }
+    position: absolute;
+    left: 50%;
+    top: 28px;
+    transform: translateX(-50%);
   }
 
   &__item:hover &__overlay {
     opacity: 1;
     background-color: #fafafa;
+  }
+  &__p-wraper {
+    max-height:146px;
+    overflow-y: auto;
   }
 }
 img {
