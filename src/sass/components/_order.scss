@@ -4,7 +4,7 @@
 
   position: relative;
   padding: 74px 0 74px 0;
-  background: url(../images/img/order-bg1x.png) center/cover no-repeat;
+  background: url(../images/modal/order-bg1x.png) center/cover no-repeat;
   .container {
     margin: 0 auto;
     display: flex;
@@ -38,7 +38,7 @@
     }
   }
   &__desc {
-   text-align: center;
+    text-align: center;
     @include desc(18px, #fff);
   }
   &__btn {
@@ -70,68 +70,6 @@
     @media (max-width: 480px) {
       width: 311px;
       height: 471px;
-    }
-  }
-  .review__pop {
-    border-radius: 13px;
-    border: 1.5px solid rgba(17, 17, 17, 0.05);
-    padding: 17px 24px;
-    align-items: center;
-    width: 100%;
-    background: #fff;
-    display: flex;
-    /*    @media (max-width:480px) {
-      
-    } */
-    display: none;
-    overflow: hidden;
-    padding-right: 10px;
-    position: fixed;
-    top: 50%;
-    width: 516px;
-    height: 414px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    @media (max-width: 480px) {
-      width: 311px;
-    }
-    img {
-      position: absolute;
-      top: 96px;
-      
-      left: 0;
-      @media (max-width: 480px) {
-              top: 190px; 
-      }
-    }
-    &__from {
-      display: flex;
-      justify-content: flex-end;
-      padding-top: 160px;
-      @media (max-width: 480px) {
-        padding-top: 35px;
-      }
-    }
-    width: 516px;
-    height: 414px;
-    border-radius: 15px;
-    background: #fd9222;
-    position: absolute;
-    &__close {
-      border-radius: 100%;
-      border: 0;
-      right: 24px;
-      position: absolute;
-      top: 24px;
-      span {
-        color: #fd9222;
-      }
-    }
-    &__titel {
-      @include titel(24px, #fff);
-    }
-    &__desc {
-      @include desc(18px, #fff);
     }
   }
 }
