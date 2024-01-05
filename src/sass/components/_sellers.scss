@@ -1,7 +1,7 @@
 .sellers {
   &__title {
-    color: #111;
-    font-family: Montserrat;
+    color: $black;
+    // font-family: Montserrat;
 
     font-style: normal;
     font-weight: 600;
@@ -25,7 +25,7 @@
   }
 
   &__span {
-    color: #fd9222;
+    color: $orange;
   }
 
   &__imglist {
@@ -48,8 +48,8 @@
   }
 
   &__desk {
-    color: #111;
-    font-family: Montserrat;
+    color: $black;
+    // font-family: Montserrat;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -65,7 +65,7 @@
   }
   &__btn {
     border: none;
-    color: #fff;
+    color: $white;
     font-family: Montserrat;
     font-size: 18px;
     font-style: normal;
@@ -73,7 +73,7 @@
     line-height: normal;
     padding: 14px 40px;
     border-radius: 100px;
-    background: #fd9222;
+    background: $orange;
     animation: pulse 2s infinite;
     cursor: pointer;
     @media (min-width: 320px) {
@@ -108,7 +108,7 @@
 
   &__mobdesk {
     display: none;
-    color: #111;
+    color: $black;
     font-family: Montserrat;
     font-size: 14px;
     font-style: normal;

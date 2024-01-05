@@ -58,27 +58,38 @@
     padding: 20px 20px 18px 20px;
     flex-direction: column;
 
+
     align-items: center;
     gap: 14px;
     border-radius: 15px;
     border: 1px solid rgba(17, 17, 17, 0.1);
-    background: #fff;
+    background: $white;
   }
   &__weightblock {
+    box-sizing:border-box;
     padding: 8px 27px;
     border-radius: 100px;
     border: 1px solid rgba(17, 17, 17, 0.1);
     background: #fafafa;
+    width: 100px;
   }
   &__weight {
     margin: 0;
-    color: #111;
+    color: $black;
     font-family: Montserrat;
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    
   }
+  // &__btnblock{
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: center;
+
+  //   margin: 0 auto;
+  // }
   &__imglist {
     @media (min-width: 320px) {
       display: none;
@@ -107,13 +118,8 @@
     border: 1.5px solid rgba(17, 17, 17, 0.05);
     box-shadow: 0px 5.445px 5.445px 0px rgba(0, 0, 0, 0.03);
 
-    color: rgba(64, 64, 64, 0.3);
-    font-family: Montserrat;
-    
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: -0.36px;
+    @include inp_font;
+
     outline: none;
     @media (min-width:320px){
       width: 263px;
@@ -147,13 +153,8 @@
   &__inputsec {
     box-sizing:border-box;
     margin-top: 8px;
-    color: rgba(64, 64, 64, 0.3);
-    font-family: Montserrat;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: -0.36px;
+
+    @include inp_font;
     outline: none;
 
 
@@ -188,13 +189,8 @@
 
   &__inputthird {
     border: none;
-    color: rgba(64, 64, 64, 0.3);
-    font-family: Montserrat;
+    @include inp_font;
 
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: -0.36px;
     height: 22px;
     outline: none;
     @media (min-width:320px){
@@ -223,9 +219,8 @@
   }
 
   &__thirdnum {
-    color: #000;
-    font-family: Montserrat;
-
+    color: $black;
+    // font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -258,15 +253,8 @@
     border: 1.5px solid rgba(17, 17, 17, 0.05);
     padding: 22px 24px 93px 24px;
     box-sizing:border-box;
-    // width: 505px;
     outline: none;
-    color: rgba(64, 64, 64, 0.3);
-    font-family: Montserrat;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: -0.36px;
+    @include inp_font;
 
     @media(min-width:320px){
       width: 263px;
@@ -359,5 +347,9 @@
   width: 28px !important;
   background-color: #fd9222 !important;
   border-radius: 100px !important;
-  // margin-right: 10px !important;
+  
+}
+
+.slick-active{
+  margin-right: 10px !important;
 }
