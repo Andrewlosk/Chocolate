@@ -2,14 +2,14 @@
   position: fixed;
   backdrop-filter: blur(3px);
   top: 0;
+  display: block;
   left: 0;
   right: 0;
   bottom: 0;
-opacity: 0;
   pointer-events: none;
   &__container {
     border-radius: 15px;
-    display: block;
+
     width: 311px;
     height: 350px;
     position: absolute;
