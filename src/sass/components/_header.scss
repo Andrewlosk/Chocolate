@@ -1,6 +1,12 @@
 .header {
   margin: 0 auto;
 
+  .container {
+    @media (min-width: 320px) {
+      padding: 0;
+    }
+  }
+
   @media (min-width: 320px) {
     max-width: 335px;
     padding-top: 20px;
