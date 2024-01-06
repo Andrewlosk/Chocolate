@@ -1,0 +1,27 @@
+.promo {
+  @media (min-width: 320px) {
+    max-width: 335px;
+  }
+  &__block {
+    @media (min-width: 320px) {
+      background-image: url(/src/images/promo/promo_bg_mobile.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &__text {
+      color: $color3;
+      font-weight: 500;
+      margin: 0;
+      @media (min-width: 320px) {
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: -0.6px;
+      }
+      @media (min-width: 1200px) {
+        font-size: 28px;
+        line-height: 34px;
+        letter-spacing: -0.84px;
+      }
+    }
+  }
+}
