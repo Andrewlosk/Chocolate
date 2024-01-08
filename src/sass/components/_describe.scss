@@ -1,4 +1,53 @@
 .information {
+  padding: 50px;
   background: #1e1823;
   width: 100%;
+  &__div {
+    text-align: center;
+    padding: 15px;
+    width: 62px;
+    height: 62px;
+    border-radius: 365px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  &__titel {
+    @include title(#fff, 18px);
+  }
+  &__desc {
+    @include desc(14px);
+  }
+  &__list {
+    display: flex;
+    gap: 70px;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 768px) {
+      gap: 0;
+      flex-wrap: wrap;
+    }
+  }
+  &__item:nth-child(3) {
+    border-right: none;
+    @media (max-width: 768px) {
+      width: 50%;
+      border: none;
+    }
+    @media (max-width: 480px) {
+      width: 100%;
+      gap: 20px;
+    }
+  }
+  &__item {
+    border-right: 2px solid rgba(255, 255, 255, 0.5);
+    padding-right: 18px;
+    @media (max-width: 768px) {
+      width: 50%;
+      border: none;
+    }
+    @media (max-width: 480px) {
+      width: 100%;
+      gap: 20px;
+    }
+  }
 }
