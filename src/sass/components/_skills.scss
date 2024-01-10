@@ -51,8 +51,9 @@
     margin: 0;
     padding-left: 20px;
     margin-top: 25px;
+  
     @media (min-width: 768px) {
-      max-width: 485px;
+      width: 408px;
     }
   }
   &__items {
@@ -73,13 +74,22 @@
     display: flex;
 
     flex-direction: column;
+    border-radius: 15px;
+    background: #fff;
+    padding: 32px;
+    justify-content: center;
+    align-items: center;
   }
   &__wrapper {
     margin-top: 32px;
     display: flex;
     gap: 40px;
-
     flex-direction: column;
+
+    @media (min-width: 1140px) {
+      flex-direction: row;
+    }
+
   }
   &__block {
     height: 51px;
@@ -112,7 +122,6 @@
     gap: 50px;
     display: flex;
     flex-direction: column;
-
   }
 }
 picture {
