@@ -1,3 +1,5 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css);
+
 .modal__overlay {
   position: fixed;
   top: 0;
@@ -6,7 +8,31 @@
   backdrop-filter: blur(5px);
   z-index: 31;
 
+  animation: animate__zoomIn 3s ;
+
+  // animation: 3s 2s anim-lineUp ease-out;
+  // @keyframes anim-lineUp {
+  //   0% {
+  //     opacity: 0;
+
+  //   }
+  //   20% {
+  //     opacity: 0;
+  //   }
+  //   50% {
+  //     opacity: 1;
+
+  //   }
+  //   100% {
+  //     opacity: 1;
+  
+  //   }
+  // }
+  
 }
+
+
+
 
 .show {
   opacity: 1;
@@ -22,6 +48,8 @@
   // padding: 48px;
   box-sizing: border-box;
   display: inline-block;
+  
+  
 
   @media (min-width: 320px) {
     padding: 32px 24px;
@@ -71,6 +99,7 @@
     border: 1px solid rgba(17, 17, 17, 0.1);
     background: #fafafa;
     width: 100px;
+    margin: 0 auto;
   }
   &__weight {
     margin: 0;
@@ -287,6 +316,7 @@
   }
 
   &__moblist {
+    padding: 0 16px;
     @media (min-width:320px) {
       display: flex;
     }
@@ -301,7 +331,7 @@
   }
   &__mobitem {
     box-sizing: border-box;
-    width: 231px;
+    width: 221px;
     padding: 32px 32px 28px 32px;
   }
 
@@ -349,10 +379,14 @@
   
 }
 
-.slick-active{
+.slick-dots .slick-active{
   margin-right: 10px !important;
 }
 .is-hidden-sellers{
   opacity: 0;
+
+
   pointer-events: none;
+
+
 }
