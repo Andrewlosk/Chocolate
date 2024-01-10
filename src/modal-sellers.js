@@ -12,6 +12,7 @@ window.addEventListener('DOMContentLoaded', () => {
   closeModalBtn.addEventListener("click", toggleModal1);
   function toggleModal1() {
     modal.classList.toggle('is-hidden-sellers');
+    modal.classList.toggle("animate__zoomIn");
   }
   openModalBtn.forEach(btn => btn.addEventListener('click', toggleModal1));
 });
