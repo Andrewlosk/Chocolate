@@ -1,3 +1,5 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 @import './utils/colors', './utils/general', './utils/mixin',
   './components/sellers', './components/add_chocolate', './components/loved';
+@import './components/order', './components/modal',
+  './components/subscribe.scss', './components/thanks.scss';
