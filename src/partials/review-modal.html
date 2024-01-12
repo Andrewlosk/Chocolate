@@ -1,6 +1,6 @@
-<div class="backdrop">
+<div class="backdrop is-hidden" data-modal>
   <div class="order__modal modal">
-    <button class="modal__close">
+    <button class="modal__close" data-modal-close>
       <span class="modal__span">&times;</span>
     </button>
     <h2 class="modal__sudtitel">
@@ -13,7 +13,7 @@
 
       <div class="modal__call">
         <div class="modal__placeholder">
-     <!--      <img src="./images/img/ua_flag.svg" alt="flag" /> -->
+          <!--      <img src="./images/img/ua_flag.svg" alt="flag" /> -->
           <span class="modal__placehaolder--num">+380</span>
         </div>
         <input
@@ -21,7 +21,7 @@
           required
           min="1"
           max="9"
-          class="modal__tel "
+          class="modal__tel"
           placeholder="Phone number"
         />
       </div>

@@ -44,7 +44,6 @@
     @media (max-width: 480px) {
       font-size: 14px;
       gap: 8px;
-      
     }
     img {
       width: 24px;
@@ -126,8 +125,8 @@
     align-items: start;
     flex-direction: column;
     gap: 19px;
-    @media (max-width:480px) {
-    gap: 14pxx;
+    @media (max-width: 480px) {
+      gap: 14pxx;
     }
   }
   &__btn {
@@ -135,7 +134,7 @@
     border: 0;
     width: 117px;
     height: 45px;
-    @media (max-width:480px) {
+    @media (max-width: 480px) {
       width: 93px;
       height: 41px;
     }
@@ -196,8 +195,7 @@
   }
 }
 
-.show {
+.is-hidden {
   pointer-events: all;
-
   opacity: 1;
 }

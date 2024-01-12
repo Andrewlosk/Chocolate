@@ -1,5 +1,46 @@
 .loved {
   padding: 128px 0;
+  &__list {
+    margin-top: 91px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 28px;
+  }
+  &__item {
+    position: relative;
+    border-radius: 15px;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    background: #fff;
+    box-shadow: 0px 9.049px 26.572px 0px rgba(215, 228, 249, 0.25);
+    height: 200px;
+    @media (min-width: 1200px) {
+      width: 360px;
+    }
+    @media (min-width: 768px) {
+      width: 344px;
+    }
+    @media (min-width: 320px) {
+      width: 335px;
+    }
+  }
+  &__item:nth-child(3) {
+    @media (min-width: 320px) {
+      display: none;
+    }
+    @media (min-width: 1200px) {
+      display: block;
+    }
+  }
+  &__item:nth-child(2) {
+    @media (min-width: 320px) {
+      display: none;
+    }
+    @media (min-width: 768px) {
+      display: block;
+    }
+  }
   &__title {
     color: #111;
     font-family: Montserrat;
@@ -30,5 +71,58 @@
     font-style: normal;
     font-weight: 600;
     line-height: 24px;
+    margin: 65px auto 24px auto;
+  }
+  &__p {
+    color: rgba(17, 17, 17, 0.7);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.28px;
+    margin-left: 10px;
+    @media (min-width: 320px) {
+      width: 299px;
+      height: 54px;
+    }
+    @media (min-width: 768px) {
+      width: 312px;
+      height: 54px;
+    }
+    @media (min-width: 1200px) {
+      width: 312px;
+      height: 72px;
+    }
+  }
+  &__img {
+    position: absolute;
+    top: -17%;
+    margin-left: 115px;
+  }
+  &__slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 31px;
+  }
+
+  &__open-button {
+    color: #111;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 100px;
+    border: 1px solid #fd9222;
+    padding: 14px 40px;
+  }
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
   }
 }
