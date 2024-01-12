@@ -1,0 +1,150 @@
+.skill {
+  background: #fafafa;
+  padding-top: 72px;
+  @media (min-width: 768px) {
+    padding: 100px 0 0;
+  }
+  @media (min-width: 1140px) {
+    padding: 125px 0 41px;
+  }
+
+  &__title {
+    color: #111;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; /* 116.667% */
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  &__title span {
+    color: #fd9222;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+  }
+  &__div-rec {
+    color: #111;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    margin: 0;
+    @media (min-width: 768px) {
+      max-width: 350px;
+    }
+  }
+
+  &__list {
+    list-style-type: disc;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+    margin: 0;
+    padding-left: 20px;
+    margin-top: 25px;
+  
+    @media (min-width: 768px) {
+      width: 408px;
+    }
+  }
+  &__items {
+    color: #111;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 128.571% */
+    letter-spacing: -0.28px;
+    &::marker {
+      color: #4c4c4c;
+      width: 8px;
+      height: 8px;
+    }
+  }
+  &__group {
+    display: flex;
+
+    flex-direction: column;
+    border-radius: 15px;
+    background: #fff;
+    padding: 32px;
+    justify-content: center;
+    align-items: center;
+  }
+  &__wrapper {
+    margin-top: 32px;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+
+    @media (min-width: 768px) {
+      margin-top: 50px;
+    }
+    @media (min-width: 1140px) {
+      flex-direction: row;
+    }
+   
+
+  }
+
+
+  &__position {
+    position: relative;
+    @media (max-width: 320px) {
+      height: 500px;
+      border-radius: 15px;
+      overflow: hidden;
+    }
+  }
+  &__video {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 100%;
+  }
+  &__play:focus {
+    cursor: pointer;
+    opacity: 0;
+  }
+  &__main {
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+picture {
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.video-js .vjs-big-play-button {
+  background-image: url(../images/skills/play.svg);
+  width: 44px;
+  height: 44px;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+.video-js:hover .vjs-big-play-button {
+  background-image: url(../images/skills/play.svg);
+}
+.video-js {
+  width: 100%;
+  height: 500px;
+  @media (max-width: 768px) {
+    height: 400px;
+  }
+}
+// щоб розтягнути зображення зберігши його пропорції
+.vjs-poster img {
+  object-fit: cover;
+}
