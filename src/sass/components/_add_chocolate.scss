@@ -53,18 +53,6 @@
     gap: 19px;
     margin-top: 50px;
     @media (min-width: 320px) {
-      flex-direction: column;
-      flex-wrap: wrap;
-    }
-    @media (min-width: 768px) {
-      flex-direction: row;
-      flex-wrap: wrap;
-      width: 704px;
-    }
-    @media (min-width: 1200px) {
-      flex-direction: row;
-      flex-wrap: nowrap;
-      width: 1138px;
     }
   }
   &__item-pb {

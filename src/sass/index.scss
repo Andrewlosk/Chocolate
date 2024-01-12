@@ -1,5 +1,8 @@
-@import '~node_modules/modern-normalize/modern-normalize.css';
 @import './utils/colors', './utils/general', './utils/mixin',
   './components/sellers', './components/add_chocolate', './components/loved';
 @import './components/order', './components/review-modal',
-  './components/subscribe.scss', './components/thanks.scss';
+  './components/subscribe.scss', './components/thanks.scss',
+
+  './components/promo', './components/header', './components/sellers',
+  './components/add_chocolate', './components/skills';
+
