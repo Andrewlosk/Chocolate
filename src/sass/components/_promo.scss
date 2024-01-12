@@ -2,6 +2,7 @@
   position: relative;
   display: flex;
   justify-content: center;
+  margin-top: 24px;
   @media (min-width: 320px) {
     padding: 14px 0 71px;
   }
@@ -69,14 +70,18 @@
     font-size: 14px;
     font-weight: 600;
     line-height: normal;
-
+    animation: pulse 2s infinite;
     padding: 12px 28px;
+    
     @media (min-width: 320px) {
       width: 120px;
     }
     @media (min-width: 768px) {
       width: 144px;
     }
+  }
+  &__btn-buy:hover{
+    animation: heartBeat 2s infinite;
   }
   &__btn-how {
     border: 1px solid $color3;

@@ -4,9 +4,6 @@
   @media (min-width: 320px) {
     padding-top: 20px;
   }
-  @media (min-width: 375px) {
-    max-width: 335px;
-  }
   @media (min-width: 768px) {
     max-width: 704px;
     padding-top: 24px;
@@ -121,5 +118,37 @@
 
   &__icon-link:hover i {
     color: $color2;
+  }
+
+  &__hamburger-menu {
+    background: $color1;
+    position: relative;
+    display: none;
+    @media (min-width: 320px) {
+      display: block;
+      width: 220px;
+      height: 812px;
+    }
+
+    @media (min-width: 768px) {
+      display: block;
+      width: 290px;
+      height: 1024;
+    }
+
+    @media (min-width: 1200px) {
+      display: none;
+    }
+
+    i {
+      color: $color3;
+    }
+  }
+  &__hamburger-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: none;
+    background: none;
   }
 }
