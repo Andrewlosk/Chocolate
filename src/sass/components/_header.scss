@@ -187,10 +187,6 @@
   @media (min-width: 1200px) {
     display: none;
   }
-
-  i {
-    color: $color3;
-  }
 }
 .menu-open {
   right: 0;
@@ -202,4 +198,5 @@
   position: absolute;
   right: 20px;
   top: 20px;
+  color: $color3;
 }
