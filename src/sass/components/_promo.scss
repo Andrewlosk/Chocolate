@@ -1,5 +1,7 @@
 .promo {
   position: relative;
+  display: flex;
+  justify-content: center;
   @media (min-width: 320px) {
     padding: 14px 0 71px;
   }
