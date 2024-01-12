@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ua">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
+    <title>Simply Chocolate</title>
 
     <link
       rel="stylesheet"
@@ -13,7 +13,7 @@
       referrerpolicy="no-referrer"
     />
     <link href="https://vjs.zencdn.net/8.3.0/video-js.css" rel="stylesheet" />
-    <link href="https://vjs.zencdn.net/8.3.0/video-js.css" rel="stylesheet" />
+
     <link 
       href="https://unpkg.com/@videojs/themes@1/dist/forest/index.css" 
       rel="stylesheet" 
@@ -27,23 +27,32 @@
     />
 
     <link rel="stylesheet" href="./sass/index.scss" />
-    
 
-    
   </head>
+
+
   <body>
+        <include src="./partials/header.html"></include>
+
+    <include src="./partials/promo.html"></include>
     <include src="./partials/sellers.html"></include>
     
     <!-- <include src="./partials/add_chocolate.html"></include> -->
     <include src="./partials/skill.html"></include>
     <script src="./js/video.js"></script>
+      <script src="./js/hamburger.js"></script>
     <script src="https://vjs.zencdn.net/8.3.0/video.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
+    
+    <script
+      src="https://kit.fontawesome.com/f642be2b08.js"
+      crossorigin="anonymous"
+    ></script>
     <script>
       AOS.init();
     </script>
   </body>
-  <!-- мол -->
+
+
 
 </html>
