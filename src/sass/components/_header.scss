@@ -1,0 +1,154 @@
+.header {
+  margin: 0 auto;
+
+  @media (min-width: 320px) {
+    padding-top: 20px;
+  }
+  @media (min-width: 768px) {
+    max-width: 704px;
+    padding-top: 24px;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 1136px;
+  }
+
+  &__logo-block {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  &__span {
+    color: $color1;
+    font-style: italic;
+    font-weight: 700;
+    @media (min-width: 320px) {
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: -0.42px;
+    }
+    @media (min-width: 1200px) {
+      font-size: 18px;
+      line-height: 20px;
+      letter-spacing: -0.54px;
+    }
+  }
+  &__hamburger {
+    @media (min-width: 320px) {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      span {
+        transition: 0.5s;
+        width: 28px;
+
+        display: block;
+        border-bottom: 3px solid $color1;
+        border-radius: 3px;
+      }
+    }
+    @media (min-width: 1200px) {
+      display: none;
+    }
+  }
+  &__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__icons {
+    @media (min-width: 320px) {
+      display: none;
+    }
+    @media (min-width: 1200px) {
+      display: flex;
+      gap: 18px;
+    }
+  }
+
+  &__navigation {
+    @media (min-width: 320px) {
+      display: none;
+    }
+    @media (min-width: 1200px) {
+      display: block;
+    }
+  }
+  &__nav-list {
+    display: flex;
+    min-width: 532px;
+    justify-content: space-between;
+  }
+  &__nav-list_link {
+    color: $color1;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: -0.28px;
+  }
+  &__nav-list_link:hover {
+    color: $color2;
+  }
+
+  &__nav-list_link {
+    position: relative;
+    display: inline-block;
+    color: #333;
+  }
+
+  &__nav-list_link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 15px;
+    height: 2px;
+    width: 0;
+    background-color: $color2;
+    transition: width 0.5s ease-in-out;
+    border-radius: 1px;
+  }
+
+  &__nav-list_link:hover::after {
+    width: 100%;
+  }
+  &__icon-link {
+    color: $color1;
+  }
+
+  &__icon-link:hover i {
+    color: $color2;
+  }
+
+  &__hamburger-menu {
+    background: $color1;
+    position: relative;
+    display: none;
+    @media (min-width: 320px) {
+      display: block;
+      width: 220px;
+      height: 812px;
+    }
+
+    @media (min-width: 768px) {
+      display: block;
+      width: 290px;
+      height: 1024;
+    }
+
+    @media (min-width: 1200px) {
+      display: none;
+    }
+
+    i {
+      color: $color3;
+    }
+  }
+  &__hamburger-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: none;
+    background: none;
+  }
+}
