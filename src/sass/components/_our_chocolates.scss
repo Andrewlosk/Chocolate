@@ -1,7 +1,11 @@
 .our_chocolates {
+  &__slider {
+    overflow: hidden;
+    position: relative;
+    margin-top: 50px;
+  }
   &__span_title {
     color: $color_2;
-
     font-family: $font-family_1;
     font-size: 24px;
     font-style: normal;
@@ -9,8 +13,17 @@
     line-height: 28px; /* 116.667% */
     letter-spacing: -0.72px;
     text-transform: uppercase;
+    @media (min-width: 320px) {
+      font-size: 20px;
+      line-height: 24px; /* 120% */
+      letter-spacing: -0.6px;
+    }
+    @media (min-width: 375px) {
+      font-size: 20px;
+      line-height: 24px; /* 120% */
+      letter-spacing: -0.6px;
+    }
   }
-
   &__title {
     text-align: center;
     color: $color_1;
@@ -21,11 +34,26 @@
     line-height: 28px;
     letter-spacing: -0.72px;
     text-transform: uppercase;
+    @media (min-width: 320px) {
+      font-size: 20px;
+      line-height: 24px; /* 120% */
+      letter-spacing: -0.6px;
+    }
+    @media (min-width: 375px) {
+      font-size: 20px;
+      line-height: 24px; /* 120% */
+      letter-spacing: -0.6px;
+    }
   }
   &__image {
     padding: 32px 20px 0px 20px;
     // position: absolute;
     // padding: 20px 31px 131px 20px;
+    @media (min-width: 375px) {
+      font-size: 20px;
+      line-height: 24px; /* 120% */
+      letter-spacing: -0.6px;
+    }
   }
   &__name {
     color: $color_2;
@@ -39,7 +67,9 @@
     text-transform: uppercase;
     text-align: center;
     margin-top: 8px;
+    font-size: 18px;
   }
+
   &__type {
     color: $color_3;
 
@@ -83,5 +113,21 @@
     width: 94px;
     background: #fafafa;
     margin: 0 auto;
+  }
+
+  .swiper__pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+
+    @media (min-width: 320px) {
+      margin-top: 20px;
+    }
+    @media (min-width: 375px) {
+      margin-top: 20px;
+    }
+  }
+  .swiper-pagination-bullet {
+    background-color: $color_1 !important;
   }
 }

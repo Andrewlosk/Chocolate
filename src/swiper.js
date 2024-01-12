@@ -1,8 +1,8 @@
 // import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs';
-new Swiper('our_chocolates__slider', {
+new Swiper('.our_chocolates__slider', {
   // If we need pagination
   pagination: {
-    el: '.swiper-pagination',
+    el: '.swiper__pagination',
     clickable: true,
   },
   grapcursor: true,
@@ -20,18 +20,17 @@ new Swiper('our_chocolates__slider', {
       slidesPerView: 1,
       spaceBetween: 0,
     },
+    375: {
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
     768: {
-      slidesPerView: 3.8,
+      slidesPerView: 2.6,
       spaceBetween: 16,
     },
     1200: {
       slidesPerView: 4,
       spaceBetween: 18,
     },
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
   },
 });
