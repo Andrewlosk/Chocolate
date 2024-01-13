@@ -3,11 +3,9 @@
   transition: 0.5s;
   backdrop-filter: blur(3px);
   top: 0;
-  opacity: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  pointer-events: none;
   &__container {
     border-radius: 15px;
 
@@ -78,6 +76,7 @@
     letter-spacing: -0.6px;
   }
 }
-.show {
-display: block;
+.is-hidden-subscribe {
+  pointer-events: none;
+  opacity: 0;
 }
