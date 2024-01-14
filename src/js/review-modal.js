@@ -1,28 +1,13 @@
-window.addEventListener('DOMContentLoaded', () =>
-  //   const openModalBtn = document.querySelector('data-modal-open');
-  //   const closeModalBtn = document.querySelector('.modal__close');
-  //   const modal = document.querySelector('.modal');
+window.addEventListener('DOMContentLoaded', () => {
+  const openModalBtn = document.querySelectorAll('[data-open-loved]');
+  const closeModalBtn = document.querySelector('[data-close-loved]');
+  const modal = document.querySelector('[data-backdrop-loved]');
 
-  //   openModalBtn.addEventListener('click', () => {
-  //     modal.classList.add('show');
-  //   });
-  //   closeModalBtn.addEventListener('click', () => {
-  //     modal.classList.remove('show');
-  //   });
-  // });
-  () => {
-    const refs = {
-      openModalBtn: document.querySelector('[data-modal-open]'),
-      closeModalBtn: document.querySelector('[data-modal-close]'),
-      modal: document.querySelector('[data-modal]'),
-    };
-
-    refs.openModalBtn.addEventListener('click', toggleModal);
-    refs.closeModalBtn.addEventListener('click', toggleModal);
-
-    function toggleModal() {
-      refs.modal.classList.toggle('is-hidden');
-      document.body.classList.toggle('no-scroll');
-    }
+  closeModalBtn.addEventListener('click', toggleModal1);
+  function toggleModal1() {
+    modal.classList.toggle('is-hidden-modal');
+    modal.classList.toggle('animate__zoomIn');
+    modal.classList.toggle('animate__zoomOut');
   }
-)();
+  openModalBtn.forEach(btn => btn.addEventListener('click', toggleModal1));
+});

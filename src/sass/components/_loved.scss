@@ -71,7 +71,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: 24px;
-    margin: 35px auto 24px auto;
+    margin: 65px auto 24px auto;
   }
   &__p {
     color: rgba(17, 17, 17, 0.7);
@@ -118,6 +118,7 @@
     border-radius: 100px;
     border: 1px solid #fd9222;
     padding: 14px 40px;
+    cursor: pointer;
   }
   &__wrapper {
     display: flex;
