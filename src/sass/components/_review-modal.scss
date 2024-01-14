@@ -92,7 +92,7 @@
     margin-left: 18px;
     margin-right: 60px;
   }
-  &__close {
+  &__close-loved {
     border: 0;
     background: 0;
     width: 28px;
@@ -194,7 +194,6 @@
   }
 }
 
-.is-hidden {
-  pointer-events: all;
-  opacity: 1;
+.show {
+  display: block;
 }
