@@ -194,6 +194,7 @@
   }
 }
 
-.show {
-  display: block;
+.is-hidden-loved {
+  opacity: 0;
+  pointer-events: none;
 }
