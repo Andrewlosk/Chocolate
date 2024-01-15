@@ -1,1 +1,0 @@
-<script>AOS.init();</script>;
