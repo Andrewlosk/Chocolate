@@ -290,69 +290,68 @@
       gap: 14pxx;
     }
   }
-    gap: 8px;
-    margin-bottom: 18px;
-  }
+  gap: 8px;
+  margin-bottom: 18px;
+}
 
-  &__btn {
-    @include button;
-    border: 0;
-    width: 117px;
-    height: 45px;
-    @media (max-width: 480px) {
-      width: 93px;
-      height: 41px;
-    }
+&__btn {
+  @include button;
+  border: 0;
+  width: 117px;
+  height: 45px;
+  @media (max-width: 480px) {
+    width: 93px;
+    height: 41px;
   }
-  textarea {
-    width: 100%;
-    overflow: hidden;
-    padding: 22px 24px 60px 24px;
-    border-radius: 13px;
-    border: 1.5px solid rgba(17, 17, 17, 0.05);
-    box-shadow: 0px 5.445px 5.445px 0px rgba(0, 0, 0, 0.03);
-    resize: none;
-    outline: none;
-    @media (max-width: 480px) {
-      height: 80px;
-    }
+}
+textarea {
+  width: 100%;
+  overflow: hidden;
+  padding: 22px 24px 60px 24px;
+  border-radius: 13px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  box-shadow: 0px 5.445px 5.445px 0px rgba(0, 0, 0, 0.03);
+  resize: none;
+  outline: none;
+  @media (max-width: 480px) {
+    height: 80px;
   }
-  &__subpop {
-    display: block;
-    padding-right: 10px;
-    position: fixed;
-    top: 50%;
-    width: 516px;
-    height: 414px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    img {
-      position: absolute;
-      top: 96px;
-      left: 0;
-    }
-    &__from {
-      display: flex;
-    }
-    @media (min-width: 768px) {
-      display: none !important;
-    }
+}
+&__subpop {
+  display: block;
+  padding-right: 10px;
+  position: fixed;
+  top: 50%;
+  width: 516px;
+  height: 414px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  img {
+    position: absolute;
+    top: 96px;
+    left: 0;
   }
-  &__img {
-    width: 167px;
-    height: 148px;
+  &__from {
+    display: flex;
   }
-  &__mobitem {
-    box-sizing: border-box;
-    width: 221px;
-    padding: 32px 32px 28px 32px;
+  @media (min-width: 768px) {
+    display: none !important;
   }
+}
+&__img {
+  width: 167px;
+  height: 148px;
+}
+&__mobitem {
+  box-sizing: border-box;
+  width: 221px;
+  padding: 32px 32px 28px 32px;
+}
 
-  &__btnblock {
-    border: none;
-    padding: 0;
-    background-color: #fff;
-  }
+&__btnblock {
+  border: none;
+  padding: 0;
+  background-color: #fff;
 }
 
 .slick-arrow {
