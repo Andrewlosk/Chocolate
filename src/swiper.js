@@ -25,7 +25,7 @@ new Swiper('.our_chocolates__slider', {
       spaceBetween: 0,
     },
     768: {
-      slidesPerView: 2.6,
+      slidesPerView: 2.9,
       spaceBetween: 16,
     },
     1200: {
