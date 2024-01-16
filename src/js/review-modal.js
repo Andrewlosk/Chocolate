@@ -14,7 +14,7 @@ window.addEventListener('DOMContentLoaded', () => {
     refs.modal.classList.remove('animate__zoomOut');
   }
   function closeModal() {
-    refs.modal.classList.toggle('is-hidden-subscribe');
+    refs.modal.classList.toggle('is-hidden-loved');
     refs.modal.classList.remove('animate__zoomIn');
     refs.modal.classList.add('animate__zoomOut');
   }
@@ -30,7 +30,7 @@ window.addEventListener('DOMContentLoaded', () => {
   };
 
   function openThanksModal() {
-    refs.modal.classList.add('is-hidden-subscribe');
+    refs.modal.classList.add('is-hidden-loved');
     thanksRefs.modal.classList.remove('is-hidden-thanks');
     thanksRefs.modal.classList.toggle('animate__zoomIn');
     refs.modal.classList.remove('animate__zoomIn');
