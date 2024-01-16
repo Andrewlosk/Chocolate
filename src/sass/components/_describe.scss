@@ -20,12 +20,14 @@
     display: flex;
 
     align-items: center;
-    justify-content: space-between;
     flex-wrap: wrap;
     gap: 38px;
+    justify-content: center;
 
     @media (min-width: 768px) {
       gap: 60px;
+      justify-content: space-between;
+
     }
 
     @media (min-width: 1200px) {
@@ -36,10 +38,8 @@
   &__item {
     position: relative;
     height: 244px;
-    @media (min-width: 480px) {
-      width: 100%;
-      gap: 20px;
-    }
+    width: 308px;
+
     @media (min-width: 768px) {
       width: 308px;
       padding: 0;
@@ -47,21 +47,22 @@
     }
     @media (min-width: 1200px) {
       padding-right: 18px;
-    }
-    &::after {
-      content: '';
-      width: 1px;
-      position: absolute;
-      top: 65px;
-      height: 124px;
-      right: -18px;
-      display: block;
-      background: rgba(255, 255, 255, 0.5);
-    }
-    &:last-child {
       &::after {
-        display: none;
+        content: '';
+        width: 1px;
+        position: absolute;
+        top: 65px;
+        height: 124px;
+        right: -18px;
+        display: block;
+        background: rgba(255, 255, 255, 0.5);
+      }
+      &:last-child {
+        &::after {
+          display: none;
+        }
       }
     }
+    
   }
 }
