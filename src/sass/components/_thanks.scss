@@ -1,0 +1,64 @@
+.thanks {
+  backdrop-filter: blur(3px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: 0.3s;
+  bottom: 0;
+  &__container {
+    overflow: hidden;
+    border-radius: 15px;
+    background: #fd9222;
+    position: absolute;
+    top: 50%;
+    width: 311px;
+    height: 350px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @media (max-width: 480px) {
+      width: 311px;
+    }
+  }
+  img {
+    position: absolute;
+    left: 0;
+    border-radius: 15px;
+    @media (max-width: 480px) {
+      bottom: -128px;
+    }
+  }
+  &__from {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 34px;
+    @media (max-width: 480px) {
+      padding-top: 35px;
+    }
+  }
+
+  &__close {
+    border-radius: 100%;
+    border: 0;
+    right: 24px;
+    position: absolute;
+    top: 24px;
+    width: 28px;
+    height: 28px;
+  }
+  &__svg {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+  }
+  &__titel {
+    @include titel(24px, #fff);
+  }
+  &__desc {
+    @include desc(18px, #fff);
+  }
+}
+.is-hidden-thanks {
+  opacity: 0;
+  pointer-events: none;
+}

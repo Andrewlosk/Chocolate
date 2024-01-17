@@ -1,0 +1,83 @@
+.subscribe {
+  position: fixed;
+  transition: 0.5s;
+  backdrop-filter: blur(3px);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 200;
+  &__container {
+    border-radius: 15px;
+
+    width: 311px;
+    height: 350px;
+    position: absolute;
+    border-radius: 15px;
+    background: #fafafa;
+    top: 50%;
+    overflow: hidden;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__box {
+    height: 169px;
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__span {
+    color: #fd9222;
+  }
+  &__block {
+    padding: 32px 24px;
+  }
+  &__input {
+    border-radius: 30px;
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    width: 100%;
+    @include subpop__input;
+    padding: 14px 18px;
+  }
+  &__btn {
+    border-radius: 100px;
+    background: #fd9222;
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border: 0;
+    padding: 14px 28px;
+  }
+  &__from {
+    display: flex;
+    align-items: center;
+  }
+
+  &__close {
+    border: 0;
+    position: absolute;
+    top: 2px;
+    right: 10px;
+
+    background: 0;
+    span {
+      color: #ffffff;
+      font-size: 40px;
+    }
+  }
+
+  &__titel {
+    @include titel(20px, #111);
+
+    line-height: 24px; /* 120% */
+    letter-spacing: -0.6px;
+  }
+}
+.is-hidden-subscribe {
+  pointer-events: none;
+  opacity: 0;
+}

@@ -7,3 +7,42 @@
   line-height: normal;
   letter-spacing: -0.36px;
 }
+@mixin button {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border-radius: 100px;
+  background: $background_1;
+}
+@mixin titel($size, $color) {
+  color: $color;
+  font-family: Montserrat;
+  font-size: $size;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; 
+  letter-spacing: -0.6px;
+  margin: 0;
+  text-transform: uppercase;
+}
+@mixin desc($size, $color) {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: $size;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.28px;
+}
+@mixin subpop__input() {
+  color: rgba(64, 64, 64, 0.3);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.36px;
+}
