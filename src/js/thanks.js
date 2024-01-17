@@ -36,7 +36,7 @@ window.addEventListener("DOMContentLoaded", () => {
     toggleThanksModal('[data-backdrop-sellers]', 'is-hidden-sellers');
 
 
-    document.addEventListener('click', function (event) {
+    thanksRefs.openModalBtn.addEventListener('click', function (event) {
         event.preventDefault();
 
         

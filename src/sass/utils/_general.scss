@@ -1,4 +1,6 @@
-
+html {
+  scroll-behavior: smooth;
+}
 .container{
     margin: 0 auto;
     @media (min-width:320px) {
