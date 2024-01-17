@@ -136,6 +136,9 @@
       position: absolute;
       top: 50%;
       left: 25%;
+      @media (min-width: 768px) {
+        left: 35%;
+      }
     }
   }
   &__scroll {
