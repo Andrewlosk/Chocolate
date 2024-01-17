@@ -56,7 +56,6 @@
       line-height: 34px;
       letter-spacing: -0.84px;
       width: 484px;
-
     }
   }
 
@@ -90,13 +89,13 @@
     cursor: pointer;
 
     padding: 12px 28px;
-
+    animation: pulse 3s infinite;
     @media (min-width: 768px) {
       width: 183px;
     }
   }
   &__btn-how:hover {
-    animation: heartBeat 15s infinite;
+    animation: pulse 2s infinite;
   }
   &__btn-how-link {
     color: $color3;
@@ -112,7 +111,7 @@
     gap: 14px;
     margin-top: 32px;
   }
-  &__span {
+  &__scroll-link {
     color: $color3;
     font-size: 12px;
     font-weight: 500;
@@ -121,7 +120,7 @@
   }
   &__scroll-box {
     background: $color3;
-
+    cursor: pointer;
     border-radius: 20px;
 
     position: relative;
@@ -140,6 +139,7 @@
     }
   }
   &__scroll {
+    animation: pulse 2s infinite;
     display: flex;
     align-items: center;
     gap: 12px;
