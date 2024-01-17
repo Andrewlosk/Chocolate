@@ -6,6 +6,7 @@
   right: 0;
   transition: 0.3s;
   bottom: 0;
+  z-index: 50;
   &__container {
     overflow: hidden;
     border-radius: 15px;

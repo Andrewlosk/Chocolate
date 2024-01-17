@@ -1,19 +1,19 @@
-<div class="backdrop animate__animated ">
+<div class="backdrop is-hidden-loved" data-backdrop-loved>
   <div class="order__modal modal">
-    <button class="modal__close">
+    <button class="modal_close-loved" data-close-loved>
       <span class="modal__span">&times;</span>
     </button>
     <h2 class="modal__sudtitel">
       LEAVE A REVIEW ABOUT <br />
       <span class="order__span">OUR CHOCOLATE</span>
     </h2>
-    <form class="modal__form" id="leave-rewiew-modal">
-      <input class="modal__input" type="text" required placeholder="Name" name="name" autocomplete="name" />
-      <input class="modal__input" type="text" required placeholder="Email" name="email" autocomplete="email" />
+    <form class="modal__form">
+      <input class="modal__input" type="text" required placeholder="Name" />
+      <input class="modal__input" type="text" required placeholder="Email" />
 
       <div class="modal__call">
         <div class="modal__placeholder">
-           <img src="./images/order-img/ua_flag.svg" alt="flag" /> 
+          <!--      <img src="./images/img/ua_flag.svg" alt="flag" /> -->
           <span class="modal__placehaolder--num">+380</span>
         </div>
         <input
@@ -21,19 +21,17 @@
           required
           min="1"
           max="9"
-          class="modal__tel "
+          class="modal__tel"
           placeholder="Phone number"
-          name="phone"
-          autocomplete="tel-national"
         />
       </div>
       <textarea
-        name="message"
+        name="masseng"
         cols="30"
         rows="10"
         placeholder="Enter text"
       ></textarea>
-      <button class="modal__btn open__subpop">Send</button>
+      <button class="modal__btn open__subpop" data-open-thanks>Send</button>
     </form>
   </div>
 </div>
