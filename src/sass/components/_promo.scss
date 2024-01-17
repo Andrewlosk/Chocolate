@@ -10,32 +10,32 @@
   background-repeat: no-repeat;
   background-size: cover;
   @media (min-width: 320px) {
-    background-image: url('/src/images/promo/promo_bg_mobile.png');
+    background-image: url('../images/promo/promo_bg_mobile.png');
     padding: 395px 0 21px;
     border-radius: 27px;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url('/src/images/promo/promo_bg_mobile2x.png');
+      background-image: url('../images/promo/promo_bg_mobile2x.png');
     }
   }
 
   @media (min-width: 768px) {
-    background-image: url('/src/images/promo/promo_bg_tablet.png');
+    background-image: url('../images/promo/promo_bg_tablet.png');
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url('/src/images/promo/promo_bg_tablet2x.png');
+      background-image: url('../images/promo/promo_bg_tablet2x.png');
     }
   }
 
   @media (min-width: 1200px) {
-    background-image: url('/src/images/promo/promo_bg_desktop.png');
+    background-image: url('../images/promo/promo_bg_desktop.png');
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url('/src/images/promo/promo_bg_desktop2x.png');
+      background-image: url('../images/promo/promo_bg_desktop2x.png');
     }
   }
 
@@ -56,7 +56,6 @@
       line-height: 34px;
       letter-spacing: -0.84px;
       width: 484px;
-      padding-left: 40px;
     }
   }
 
@@ -81,7 +80,7 @@
     }
   }
   &__btn-buy:hover {
-    animation: heartBeat 2s infinite;
+    animation: pulse 2s infinite;
   }
   &__btn-how {
     border: 1px solid $color3;
@@ -89,18 +88,21 @@
     background: transparent;
     cursor: pointer;
 
+    padding: 12px 28px;
+
+    @media (min-width: 768px) {
+      width: 183px;
+    }
+  }
+  &__btn-how:hover {
+    animation: heartBeat 15s infinite;
+  }
+  &__btn-how-link {
     color: $color3;
     font-size: 14px;
     font-weight: 600;
     line-height: normal;
-
-    padding: 12px 28px;
-    @media (min-width: 320px) {
-      width: 159px;
-    }
-    @media (min-width: 768px) {
-      width: 183px;
-    }
+    text-decoration: none;
   }
 
   &__btns {
@@ -122,17 +124,8 @@
     background: $color3;
 
     border-radius: 20px;
-    display: flex;
-    align-items: center;
 
-    i {
-      @media (min-width: 320px) {
-        padding: 8px;
-      }
-      @media (min-width: 768px) {
-        padding: 13px;
-      }
-    }
+    position: relative;
     @media (min-width: 320px) {
       width: 28px;
       height: 28px;
@@ -140,6 +133,11 @@
     @media (min-width: 768px) {
       width: 38px;
       height: 38px;
+    }
+    i {
+      position: absolute;
+      top: 50%;
+      left: 25%;
     }
   }
   &__scroll {
@@ -156,7 +154,7 @@
     @media (min-width: 768px) {
       display: flex;
       justify-content: space-between;
-      padding: 0 40px 0 40px;
+      padding: 40px 0;
     }
   }
 }
