@@ -15,7 +15,7 @@
     justify-content: center;
     flex-direction: column;
   }
-  /* @media (min-device-pixel-ratio: 2),
+  @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -32,7 +32,7 @@
      
       width: 100%;
     }
-  } */
+  }
   &__titel {
     @include titel(20px, #fff);
     text-align: center;

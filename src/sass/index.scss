@@ -1,8 +1,2 @@
-@import './base/common', './utils/colors', './utils/general', './utils/mixin',
-
-  './components/sellers', './components/add_chocolate', './components/modal',
-  './components/promo', './components/header', './components/sellers',
-  './components/add_chocolate', './components/skills';
-
-
-@import './components/order', "./components/modal", './components/subscribe.scss', "./components/thanks.scss";
+@import './base/common', './utils/colors', './utils/general', './utils/mixin';
+@import './components/order',  './components/subscribe.scss', "./components/thanks";

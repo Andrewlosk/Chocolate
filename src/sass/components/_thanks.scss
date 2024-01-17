@@ -19,6 +19,14 @@
     @media (max-width: 480px) {
       width: 311px;
     }
+    @media (max-width: 768px) {
+      width: 516px;
+      height: 414px;
+    }
+    @media (min-width: 1200px) {
+      width: 538px;
+      height: 412px;
+    }
   }
   img {
     position: absolute;
@@ -31,9 +39,13 @@
   &__from {
     display: flex;
     justify-content: flex-end;
-    padding-top: 34px;
+    padding-right: 49px;
+    padding-top: 76px;
     @media (max-width: 480px) {
       padding-top: 35px;
+    }
+    @media (max-width: 768px) {
+    
     }
   }
 
