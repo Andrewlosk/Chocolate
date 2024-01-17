@@ -1,2 +1,0 @@
-window.addEventListener("DOMContentLoaded",()=>{let e=document.querySelectorAll("[data-open-sellers]"),t=document.querySelector("[data-close-sellers]"),l=document.querySelector("[data-backdrop-sellers]");function s(){l.classList.toggle("is-hidden-sellers"),l.classList.toggle("animate__zoomIn")}t.addEventListener("click",s),e.forEach(e=>e.addEventListener("click",s))});
-//# sourceMappingURL=index.a5df863f.js.map
