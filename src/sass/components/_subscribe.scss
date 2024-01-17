@@ -16,13 +16,12 @@
     overflow: hidden;
     left: 50%;
     transform: translate(-50%, -50%);
-    @media (max-width: 480px) {
+    @media (min-width: 375px) {
       width: 311px;
-      height: 350px;
+      height: 320px;
     }
-    @media (max-width: 768px) {
+    @media (min-width: 768px) {
       width: 538px;
-    
     }
     @media (min-width: 1200px) {
       width: 538px;
@@ -30,9 +29,7 @@
     }
   }
   &__box {
-    height: 169px;
     img {
-     
       object-fit: cover;
     }
   }
@@ -40,7 +37,7 @@
     color: #fd9222;
   }
   &__block {
-    padding: 40px 40px 0;
+    padding: 40px 40px;
   }
   &__input {
     border-radius: 30px;
