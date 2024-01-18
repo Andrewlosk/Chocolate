@@ -1,4 +1,8 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+@import './utils/colors', './utils/general', './utils/mixin', './base/common';
+@import './components/describe', './components/sellers',
+  './components/add_chocolate', './components/promo', './components/header',
+  './components/sellers', './components/add_chocolate', './components/skills',
+  './components/order', './components/subscribe.scss',
+  './components/thanks.scss', './components/loved', './components/our_chocolates', './components/modal';
 
-
-@import './utils/colors', './utils/general', './utils/mixin',
-  './components/sellers', './components/add_chocolate', './components/footer';

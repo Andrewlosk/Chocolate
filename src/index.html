@@ -1,24 +1,50 @@
 <!DOCTYPE html>
-<html lang="ru">
+
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
+    <title>Simply Chocolate</title>
 
+    <link href="https://vjs.zencdn.net/8.3.0/video-js.css" rel="stylesheet" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
+    <link
+      href="https://unpkg.com/@videojs/themes@1/dist/forest/index.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon/favicon-16x16.png"
+    />
+    <!-- <link rel="manifest" href="./images/favicon/site.webmanifest" /> -->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700&family=Roboto&display=swap"
       rel="stylesheet"
     />
 
+<<<<<<< HEAD
     <link rel="stylesheet" href="./sass/index.scss" />
     <script type="module" src="./index.js"></script>
   </head>
@@ -28,5 +54,75 @@
     
     <include src="./partials/add_chocolate.html"></include> -->
     <include src="./partials/footer.html"></include>
+=======
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./sass/index.scss" />
+  </head>
+
+  <body>
+    <include src="./partials/header.html"></include>
+    <include src="./partials/promo.html"></include>
+    <include src="./partials/describe.html"></include>
+    <include src="./partials/add_chocolate.html"></include>
+    <include src="./partials/skill.html"></include>
+    <include src="./partials/our_chocolates.html"></include>
+    <include src="./partials/sellers.html"></include>
+    <include src="./partials/loved.html"></include>
+    <include src="./partials/order.html"></include>
+
+    <!-- тут всі модалки -->
+
+
+    <include src="./partials/modal.html"></include>
+    <include src="./partials/subscribe-modal.html"></include>
+    <include src="./partials/thanks.html"></include>
+
+    <!-- Тут всі бібліотеки -->
+
+    <script src="//code.jquery.com/jquery-3.7.0.min.js"></script>
+
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script src="https://vjs.zencdn.net/8.3.0/video.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script
+      src="https://kit.fontawesome.com/f642be2b08.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Тут наш функціонал -->
+    <script src="./js/swiper.js"></script>
+    <script src="./js/slick.js"></script>
+    <script src="./js/video.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script src="./js/hamburger.js"></script>
+    <script src="./js/modal-sellers.js"></script>
+    <script src="./js/subscribe-modal.js"></script>
+    <script src="./js/thanks.js"></script>
+
+>>>>>>> 4123751cd02ccbec0f22d18cdde171ac4681aad1
   </body>
 </html>
