@@ -1,11 +1,10 @@
 <div class="backdrop is-hidden-loved" data-backdrop-loved>
   <div class="order__modal modal">
-    <button class="modal_close-loved" data-close-loved>
-      <span class="modal__span">&times;</span>
-    </button>
-    <h2 class="modal__sudtitel">
+    <span class="modal__cross modal_close-loved" data-close-loved>&times;</span>
+
+    <h2 class="modal__sudtitle">
       LEAVE A REVIEW ABOUT <br />
-      <span class="order__span">OUR CHOCOLATE</span>
+      <span class="modal__span">OUR CHOCOLATE</span>
     </h2>
     <form class="modal__form">
       <input class="modal__input" type="text" required placeholder="Name" />
@@ -13,7 +12,11 @@
 
       <div class="modal__call">
         <div class="modal__placeholder">
-          <!--      <img src="./images/img/ua_flag.svg" alt="flag" /> -->
+          <img
+            class="modal__img"
+            src="./images/loved/Frame.svg"
+            alt="ua flag"
+          />
           <span class="modal__placehaolder--num">+380</span>
         </div>
         <input
@@ -26,7 +29,7 @@
         />
       </div>
       <textarea
-        name="masseng"
+        name="massage"
         cols="30"
         rows="10"
         placeholder="Enter text"
