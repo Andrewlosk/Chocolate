@@ -1,10 +1,10 @@
 // import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs';
 new Swiper('.our_chocolates__slider', {
-  // If we need pagination
   pagination: {
     el: '.swiper__pagination',
     clickable: true,
   },
+
   grapcursor: true,
   freeMode: true,
   simulateTouch: false,
