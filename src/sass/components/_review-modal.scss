@@ -33,14 +33,14 @@
     line-height: 24px;
     letter-spacing: -0.6px;
     text-transform: uppercase;
-    margin-left: 40px;
+    // margin-left: 40px;
     margin-top: 40px;
     @media (min-width: 320px) {
-      margin-left: 24px;
+      // margin-left: 24px;
       font-size: 14px;
     }
     @media (min-width: 768px) {
-      margin-left: 40px;
+      // margin-left: 40px;
       font-size: 18px;
     }
   }
@@ -54,10 +54,11 @@
     @media (min-width: 320px) {
       width: 263px;
       padding: 14px 18px;
+      // margin-right: 34px;
     }
     @media (min-width: 768px) {
       width: 437px;
-      padding: 17px 24px;
+      padding: 17px 23px;
     }
   }
   &__placeholder {
@@ -152,14 +153,15 @@
     display: flex;
     align-items: start;
     flex-direction: column;
+    width: 437px;
     gap: 19px;
     @media (min-width: 320px) {
       width: 263px;
-      padding-left: 24px;
+      padding-right: 14px;
     }
     @media (min-width: 768px) {
       width: 437px;
-      padding-left: 40px;
+      padding-left: -68px;
     }
   }
   &__btn {
@@ -242,12 +244,13 @@ textarea {
   padding-left: 24px;
   @media (min-width: 320px) {
     height: 91px;
-    width: 235px;
+    width: 263px;
     font-size: 14px;
+    padding-right: 34px;
   }
   @media (min-width: 768px) {
     height: 137px;
-    width: 410px;
+    width: 437px;
     font-size: 18px;
   }
 }

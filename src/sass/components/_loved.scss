@@ -3,7 +3,6 @@
   &__list {
     margin-top: 74px !important;
     display: flex;
-  
 
     @media (min-width: 768px) {
       margin-top: 91px !important;
@@ -116,14 +115,44 @@
     justify-content: center;
     margin-top: 50px;
   }
+  &__slider {
+    position: relative;
+    overflow: hidden;
+  }
+  .swiper__pagination {
+    display: flex;
+    justify-content: center;
+
+    margin: auto;
+    gap: 13px;
+
+    margin-top: 20px;
+    @media (min-width: 375px) {
+      margin-top: 20px;
+    }
+    @media (min-width: 768px) {
+      margin-top: 32px;
+    }
+  }
+  .swiper-pagination-bullet {
+    background-color: $color_3;
+    width: 13px;
+    height: 13px;
+    margin: 0;
+  }
+  .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+  .swiper-pagination-horizontal.swiper-pagination-bullets
+    .swiper-pagination-bullet {
+    margin: 0;
+  }
+  .swiper-pagination-bullet-active {
+    width: 28px;
+    height: 13px;
+    border-radius: 100px;
+    background-color: $color_1;
+  }
 }
 .is-hidden-loved {
   pointer-events: none;
   opacity: 0;
-}
-
-.reviews__slider {
-
-  position: relative;
-  overflow: hidden;
 }
