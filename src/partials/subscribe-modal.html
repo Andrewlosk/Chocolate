@@ -1,4 +1,7 @@
-<div class="subscribe is-hidden-subscribe" data-backdrop-subscribe>
+<div
+  class="subscribe is-hidden-subscribe animate__animated"
+  data-backdrop-subscribe
+>
   <div class="subscribe__container">
     <button class="subscribe__close" data-close-subscribe>
       <svg
@@ -51,7 +54,7 @@
     </button>
     <div class="subscribe__elements">
       <div class="subscribe__box">
-           <picture>
+        <picture>
           <source
             media="(min-width: 1200px)"
             srcset="
@@ -78,20 +81,24 @@
             alt="Chocolate Photo"
             class="thanks-modal__img"
           />
-        </picture> 
+        </picture>
       </div>
       <div class="subscribe__block">
         <h2 class="subscribe__titel">
           Explore our <br />
           <span class="subscribe__span"> new chocolate </span> first!
         </h2>
-        <from class="subscribe__from">
+        <from class="subscribe__from" id="subscribe-form">
           <input
             class="subscribe__input"
-            type="text"
+            type="email"
             placeholder="Enter your email"
+            name="email"
+            autocomplete="email"
           />
-          <button class="subscribe__btn open__pop" data-open-thanks>Submit</button>
+          <button class="subscribe__btn open__pop" data-open-thanks>
+            Submit
+          </button>
         </from>
       </div>
     </div>

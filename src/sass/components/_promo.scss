@@ -1,57 +1,55 @@
 .promo {
-  @media (min-width: 320px) {
-    max-width: 335px;
-    padding: 14px 0 71px;
-  }
-  &__block {
+  position: relative;
+  padding-bottom: 72px;
+  margin: 0 20px;
+
+  .container {
+    padding: 395px 20px 21px 20px;
+    border-radius: 27px;
     background-repeat: no-repeat;
     background-size: cover;
-    @media (min-width: 320px) {
-      background-image: url('/src/images/promo/promo_bg_mobile.png');
-      padding: 395px 0 21px;
-      border-radius: 27px;
-      @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: url('/src/images/promo/promo_bg_mobile2x.png');
-      }
-    }
-
-    @media (min-width: 768px) {
-      background-image: url('/src/images/promo/promo_bg_tablet.png');
-
-      @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: url('/src/images/promo/promo_bg_tablet2x.png');
-      }
-    }
-  }
-  @media (min-width: 1200px) {
-    background-image: url('/src/images/promo/promo_bg_desktop.png');
+    background-image: url('../images/promo/promo_bg_mobile.png');
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url('/src/images/promo/promo_bg_desktop2x.png');
+      background-image: url('../images/promo/promo_bg_mobile2x.png');
+    }
+
+    @media (min-width: 768px) {
+      width: 704px;
+      background-image: url('../images/promo/promo_bg_tablet.png');
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('../images/promo/promo_bg_tablet2x.png');
+      }
+    }
+
+    @media (min-width: 1200px) {
+      width: 1136px;
+      background-image: url('../images/promo/promo_bg_desktop.png');
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('../images/promo/promo_bg_desktop2x.png');
+      }
     }
   }
-
   &__text {
     color: $color3;
     font-weight: 500;
     margin: 0;
-    @media (min-width: 320px) {
-      font-size: 20px;
-      line-height: 24px;
-      letter-spacing: -0.6px;
-      width: 300px;
-      text-align: left;
-      padding: 0 16px 0 20px;
-    }
-    @media (min-width: 1200px) {
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.6px;
+    text-align: left;
+
+    @media (min-width: 768px) {
       font-size: 28px;
       line-height: 34px;
       letter-spacing: -0.84px;
+      width: 484px;
     }
   }
 
@@ -65,9 +63,18 @@
     font-size: 14px;
     font-weight: 600;
     line-height: normal;
-
-    width: 120px;
+    animation: pulse 2s infinite;
     padding: 12px 28px;
+
+    @media (min-width: 320px) {
+      width: 120px;
+    }
+    @media (min-width: 768px) {
+      width: 144px;
+    }
+  }
+  &__btn-buy:hover {
+    animation: pulse 2s infinite;
   }
   &__btn-how {
     border: 1px solid $color3;
@@ -75,22 +82,33 @@
     background: transparent;
     cursor: pointer;
 
+    padding: 12px 28px;
     color: $color3;
     font-size: 14px;
     font-weight: 600;
     line-height: normal;
+    text-decoration: none;
 
-    width: 159px;
-    padding: 12px 28px;
+    @media (min-width: 768px) {
+      width: 183px;
+    }
+  }
+  &__btn-how:hover {
+    animation: heartBeat 15s infinite;
+  }
+  &__btn-how-link {
+    color: $color3;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: none;
   }
 
   &__btns {
     display: flex;
     align-items: center;
     gap: 14px;
-    justify-content: center;
-
-    padding-top: 32px;
+    margin-top: 32px;
   }
   &__span {
     color: $color3;
@@ -101,19 +119,35 @@
   }
   &__scroll-box {
     background: $color3;
-    width: 28px;
-    height: 28px;
+
     border-radius: 20px;
-    display: flex;
-    align-items: center;
+
+    position: relative;
+    @media (min-width: 320px) {
+      width: 28px;
+      height: 28px;
+    }
+    @media (min-width: 768px) {
+      width: 38px;
+      height: 38px;
+    }
     i {
-      padding: 8px;
+      position: absolute;
+      top: 50%;
+      left: 25%;
     }
   }
   &__scroll {
     display: flex;
     align-items: center;
     gap: 12px;
-    padding: 32px 0 0 20px;
+    margin-top: 32px;
+  }
+
+  &__elements-block {
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 }

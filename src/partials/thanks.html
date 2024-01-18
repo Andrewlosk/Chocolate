@@ -1,5 +1,5 @@
-<div class="thanks is-hidden-thanks" data-backdrop-thanks>
-  <div class="thanks__container animate__rubberBand animate__slower">
+<div class="thanks animate__animated is-hidden-thanks" data-backdrop-thanks>
+  <div class="thanks__container">
     <button class="thanks__close" data-close-thanks>
       <svg
         class="thanks__svg"
@@ -58,7 +58,7 @@
         <p class="thanks__desc">We are so happy to hear from you!</p>
       </article>
     </div>
-    <!--   <picture>
+    <picture>
       <source
         media="(min-width: 1200px)"
         srcset="
@@ -67,24 +67,39 @@
         "
       />
       <source
-        media="(max-width: 767px)"
+        media="(min-width: 768px)"
         srcset="
           ./images/order-thanks/chacolate-modal-mob1x.png 1x,
           ./images/order-thanks/chacolate-modal-mob2x.png 2x
         "
       />
       <source
-        media="(min-width: 768px)"
+        media="(min-width: 375px)"
         srcset="
           ./images/order-thanks/chacolate-modal-tab1x.png 1x,
           ./images/order-thanks/chacolate-modal-tab2x.png 2x
         "
       />
       <img
-        src="./images/order-thanks/chacolate-modal-tab1x.png"
-        alt="Chocolate Photo"
+        src="./images/order-thanks/chacolate-modal-desktop1x.png"
+        alt="Chocolate
+      Photo"
         class="thanks-modal__img"
       />
-    </picture> -->
+      <source
+        media="(min-width: 320px)"
+        srcset="
+          ./images/order-thanks/chacolate-modal-tab1x.png 1x,
+          ./images/order-thanks/chacolate-modal-tab2x.png 2x
+        "
+      />
+      <img
+        src="./images/order-thanks/chacolate-modal-desktop1x.png"
+        alt="Chocolate
+    Photo"
+        class="thanks-modal__img"
+      />
+      <img />
+    </picture>
   </div>
 </div>

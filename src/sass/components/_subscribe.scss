@@ -1,11 +1,12 @@
 .subscribe {
-  position: absolute;
+  position: fixed;
   transition: 0.5s;
   backdrop-filter: blur(3px);
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: 200;
   &__container {
     border-radius: 15px;
 

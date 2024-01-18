@@ -1,9 +1,7 @@
 .header {
   margin: 0 auto;
-
-  @media (min-width: 320px) {
-    padding-top: 20px;
-  }
+  position: relative;
+  padding: 25px 0 19px;
   @media (min-width: 768px) {
     max-width: 704px;
     padding-top: 24px;
@@ -89,6 +87,9 @@
   &__nav-list_link:hover {
     color: $color2;
   }
+  &__nav-list_link path:hover {
+    fill: $color2;
+  }
 
   &__nav-list_link {
     position: relative;
@@ -114,36 +115,14 @@
   }
   &__icon-link {
     color: $color1;
+    display: flex;
+    align-items: center;
   }
 
-  &__icon-link:hover i {
-    color: $color2;
+  &__icon-link:hover path {
+    stroke: $color2;
   }
 
-  &__hamburger-menu {
-    background: $color1;
-    position: relative;
-    display: none;
-    @media (min-width: 320px) {
-      display: block;
-      width: 220px;
-      height: 812px;
-    }
-
-    @media (min-width: 768px) {
-      display: block;
-      width: 290px;
-      height: 1024;
-    }
-
-    @media (min-width: 1200px) {
-      display: none;
-    }
-
-    i {
-      color: $color3;
-    }
-  }
   &__hamburger-btn {
     position: absolute;
     top: 20px;
@@ -151,4 +130,70 @@
     border: none;
     background: none;
   }
+
+  &__hamburger-nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 176px 0 0 50px;
+  }
+  &__hamburger-nav-list-item {
+    color: $color3;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: -0.28px;
+  }
+
+  &__hamburger-nav-list-item:hover {
+    color: $color2;
+  }
+  &__hamburger-icons {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 65px 0 0 20px;
+  }
+  &__hamburger-icon-link {
+    color: $color1;
+  }
+
+  &__hamburger-icon-link:hover path {
+    stroke: $color2;
+  }
+}
+
+.menu {
+  background: $color1;
+  transition: 0.5s;
+  @media (min-width: 320px) {
+    width: 220px;
+    height: 812px;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 1000;
+  }
+
+  @media (min-width: 768px) {
+    display: block;
+    width: 290px;
+    height: 1024;
+  }
+
+  @media (min-width: 1200px) {
+    display: none;
+  }
+}
+.menu-open {
+  right: 0;
+}
+
+.menu-btn {
+  background: $color1;
+  border: none;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: $color3;
 }
