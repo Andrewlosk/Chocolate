@@ -1,0 +1,164 @@
+.our_chocolates {
+  padding: 128px 0;
+  &__slider {
+    overflow: hidden;
+    position: relative;
+    margin-top: 50px;
+  }
+  &__span_title {
+    color: $color_2;
+    font-family: $font-family_1;
+    font-style: normal;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    @media (min-width: 320px) {
+      font-size: 20px;
+      line-height: 24px;
+      letter-spacing: -0.6px;
+    }
+    @media (min-width: 768px) {
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: -0.72px;
+    }
+  }
+  &__title {
+    text-align: center;
+    color: $color_1;
+    font-family: $font-family_1;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+    @media (min-width: 320px) {
+      font-size: 20px;
+      line-height: 24px; /* 120% */
+      letter-spacing: -0.6px;
+    }
+    @media (min-width: 375px) {
+      font-size: 20px;
+      line-height: 24px; /* 120% */
+      letter-spacing: -0.6px;
+    }
+  }
+  &__image {
+    padding: 32px 20px 0px 20px;
+    // position: absolute;
+    // padding: 20px 31px 131px 20px;
+    @media (min-width: 320px) {
+      padding: 32px 52px 0px 52px;
+    }
+    @media (min-width: 768px) {
+      padding: 32px 20px 0px 20px;
+    }
+  }
+  &__name {
+    color: $color_2;
+    margin: 0;
+    font-family: $font-family_1;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 133.333% */
+    letter-spacing: -0.36px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 8px;
+    font-size: 18px;
+  }
+
+  &__type {
+    color: $color_3;
+
+    font-family: $font-family_1;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px; /* 116.667% */
+    letter-spacing: -0.24px;
+    text-align: center;
+    margin-top: 2px;
+    margin-bottom: 18px;
+  }
+  &__price {
+    color: $color_2;
+
+    font-family: $font-family_1;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    gap: 20px;
+
+    @media (min-width: 768px) {
+      gap: 18px;
+      margin-bottom: 32px;
+    }
+  }
+  &__items {
+    height: 364px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    background: #fff;
+    margin-right: 0px !important;
+    box-sizing: border-box;
+    @media (min-width: 320px) {
+      width: 335px !important;
+    }
+    @media (min-width: 768px) {
+      width: 270px !important;
+    }
+  }
+
+  &__button {
+    border-radius: 100px;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    width: 94px;
+    background: #fafafa;
+    margin: 0 auto;
+  }
+
+  .swiper__pagination {
+    display: flex;
+    justify-content: center;
+
+    margin: auto;
+    gap: 13px;
+
+    margin-top: 20px;
+    @media (min-width: 375px) {
+      margin-top: 20px;
+    }
+    @media (min-width: 768px) {
+      margin-top: 32px;
+    }
+  }
+  .swiper-pagination-bullet {
+    background-color: $color_3;
+    width: 13px;
+    height: 13px;
+    margin: 0;
+  }
+  .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+  .swiper-pagination-horizontal.swiper-pagination-bullets
+    .swiper-pagination-bullet {
+    margin:0;
+  }
+  .swiper-pagination-bullet-active {
+    width: 28px;
+    height: 13px;
+    border-radius: 100px;
+    background-color: $color_1;
+  }
+}
