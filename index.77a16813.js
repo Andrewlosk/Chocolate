@@ -1,0 +1,2 @@
+new Swiper(".our_chocolates__slider",{pagination:{el:".swiper__pagination",clickable:!0},grapcursor:!0,freeMode:!0,simulateTouch:!1,autoplay:{delay:2e3,stopOnLastSlide:!1,disableonInteraction:!0},speed:750,breakpoints:{320:{slidesPerView:1,spaceBetween:0},375:{slidesPerView:1,spaceBetween:0},768:{slidesPerView:2.9,spaceBetween:16},1200:{slidesPerView:4,spaceBetween:18}}});
+//# sourceMappingURL=index.77a16813.js.map
