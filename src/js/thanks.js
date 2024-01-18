@@ -36,8 +36,9 @@ window.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('click', function (event) {
     event.preventDefault();
 
-    // thanksRefs.openModalBtn.addEventListener('click', () => toggleThanksModal('[data-backdrop-subscribe]', 'is-hidden-subscribe'));
-    // thanksRefs.closeModalBtn.addEventListener('click', () => toggleThanksModal('[data-backdrop-subscribe]', 'is-hidden-subscribe'));
+    thanksRefs.openModalBtn.forEach(btn =>
+      btn.addEventListener('click', () => toggleThanksModal('[data-backdrop-subscribe]', 'is-hidden-subscribe')));
+    thanksRefs.closeModalBtn.addEventListener('click', () => toggleThanksModal('[data-backdrop-subscribe]', 'is-hidden-subscribe'));
 
     thanksRefs.openModalBtn.forEach(btn =>
       btn.addEventListener(
