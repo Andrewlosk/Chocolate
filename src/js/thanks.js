@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', () => {
   const thanksRefs = {
-    openModalBtn: document.querySelector('[data-open-thanks]'),
+    openModalBtn: document.querySelectorAll('[data-open-thanks]'),
     closeModalBtn: document.querySelector('[data-close-thanks]'),
     modal: document.querySelector('[data-backdrop-thanks]'),
   };
@@ -9,7 +9,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const modal = document.querySelector(backdrop);
 
     function openThanksModal() {
-      modal.classList.add();
+      modal.classList.add(hiddenClass);
       modal.classList.add('animate__zoomOut');
       modal.classList.remove('animate__zoomIn');
       thanksRefs.modal.classList.remove('is-hidden-thanks');
@@ -23,30 +23,30 @@ window.addEventListener('DOMContentLoaded', () => {
       thanksRefs.modal.classList.add('animate__zoomOut');
     }
 
-    thanksRefs.openModalBtn.addEventListener('click', () =>
-      openThanksModal(backdrop, hiddenClass)
+    thanksRefs.openModalBtn.forEach(btn =>
+      btn.addEventListener('click', () =>
+        openThanksModal(backdrop, hiddenClass)
+      )
     );
     thanksRefs.closeModalBtn.addEventListener('click', () =>
       closeThanksModal(backdrop, hiddenClass)
     );
   }
 
-  toggleThanksModal('[data-backdrop-subscribe]', 'is-hidden-subscribe');
-  toggleThanksModal('[data-backdrop-sellers]', 'is-hidden-sellers');
-
-  thanksRefs.openModalBtn.addEventListener('click', function (event) {
+  document.addEventListener('click', function (event) {
     event.preventDefault();
 
-    thanksRefs.openModalBtn.addEventListener('click', () =>
-      toggleThanksModal('[data-backdrop-subscribe]', 'is-hidden-subscribe')
-    );
-    thanksRefs.closeModalBtn.addEventListener('click', () =>
-      toggleThanksModal('[data-backdrop-subscribe]', 'is-hidden-subscribe')
+    thanksRefs.openModalBtn.forEach(btn =>
+      btn.addEventListener('click', () => toggleThanksModal('[data-backdrop-subscribe]', 'is-hidden-subscribe')));
+    thanksRefs.closeModalBtn.addEventListener('click', () => toggleThanksModal('[data-backdrop-subscribe]', 'is-hidden-subscribe'));
+
+    thanksRefs.openModalBtn.forEach(btn =>
+      btn.addEventListener(
+        'click',
+        toggleThanksModal('[data-backdrop-sellers]', 'is-hidden-sellers')
+      )
     );
 
-    thanksRefs.openModalBtn.addEventListener('click', () =>
-      toggleThanksModal('[data-backdrop-sellers]', 'is-hidden-sellers')
-    );
     thanksRefs.closeModalBtn.addEventListener('click', () =>
       toggleThanksModal('[data-backdrop-sellers]', 'is-hidden-sellers')
     );
