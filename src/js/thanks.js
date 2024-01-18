@@ -9,7 +9,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const modal = document.querySelector(backdrop);
 
     function openThanksModal() {
-      modal.classList.add();
+      modal.classList.add(hiddenClass);
       modal.classList.add('animate__zoomOut');
       modal.classList.remove('animate__zoomIn');
       thanksRefs.modal.classList.remove('is-hidden-thanks');
