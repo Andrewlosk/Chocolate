@@ -33,12 +33,18 @@ window.addEventListener('DOMContentLoaded', () => {
     );
   }
 
-  document.addEventListener('click', function (event) {
-    event.preventDefault();
+  document.addEventListener('click', function () {
+
 
     thanksRefs.openModalBtn.forEach(btn =>
-      btn.addEventListener('click', () => toggleThanksModal('[data-backdrop-subscribe]', 'is-hidden-subscribe')));
-    thanksRefs.closeModalBtn.addEventListener('click', () => toggleThanksModal('[data-backdrop-subscribe]', 'is-hidden-subscribe'));
+      btn.addEventListener('click', event => {
+        event.preventDefault();
+        toggleThanksModal('[data-backdrop-subscribe]', 'is-hidden-subscribe');
+      })
+    );
+    thanksRefs.closeModalBtn.addEventListener('click', () =>
+      toggleThanksModal('[data-backdrop-subscribe]', 'is-hidden-subscribe')
+    );
 
     thanksRefs.openModalBtn.forEach(btn =>
       btn.addEventListener(
