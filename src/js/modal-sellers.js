@@ -11,12 +11,12 @@ window.addEventListener('DOMContentLoaded', () => {
   refs.closeModalBtn.addEventListener('click', closeModal);
 
   function openModal() {
-    refs.modal.classList.toggle('is-hidden-sellers');
+    refs.modal.classList.toggle('is-hidden');
     refs.modal.classList.add('animate__zoomIn');
     refs.modal.classList.remove('animate__zoomOut');
   }
   function closeModal() {
-    refs.modal.classList.add('is-hidden-sellers');
+    refs.modal.classList.add('is-hidden');
     refs.modal.classList.remove('animate__zoomIn');
     refs.modal.classList.add('animate__zoomOut');
   }
