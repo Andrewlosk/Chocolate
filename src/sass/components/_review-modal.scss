@@ -8,21 +8,9 @@
   z-index: 100;
   transition: 0.5s;
 }
+
 .modal {
-  transform: translate(-50%, -50%);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  border-radius: 15px;
-  background: #fafafa;
-  @media (min-width: 320px) {
-    width: 311px;
-    height: 471px;
-  }
-  @media (min-width: 720px) {
-    width: 517px;
-    height: 631px;
-  }
+
 
   &__sudtitle {
     color: #111;
@@ -204,10 +192,6 @@
 
   &__span {
     color: #fd9222;
-
-
-
-
   }
 }
 .is-hidden-thanks {
@@ -242,6 +226,7 @@ textarea {
     font-size: 18px;
   }
 }
+
 .modal-loved__input {
   width: 100%;
 }
@@ -258,8 +243,21 @@ textarea {
     @media (min-width: 768px) {
       left: 32%;
     }
-    @media (min-width: 1200px) {
-      // left: 32%;
-    }
+  }
+}
+.loved__modal {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 15px;
+  background: #fafafa;
+  @media (min-width: 320px) {
+    width: 311px;
+    height: 471px;
+  }
+  @media (min-width: 720px) {
+    width: 517px;
+    height: 631px;
   }
 }
