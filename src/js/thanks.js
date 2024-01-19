@@ -6,10 +6,9 @@ window.addEventListener('DOMContentLoaded', () => {
   };
 
 
-  function openThanksModal(backdrop, hiddenClass) {
+  function openThanksModal(backdrop) {
     const modal = document.querySelector(backdrop);
-    modal.classList.add(hiddenClass);
-    modal.classList.add('animate__zoomOut');
+    modal.classList.add('is-hidden');
     modal.classList.remove('animate__zoomIn');
     thanksRefs.modal.classList.remove('is-hidden-thanks');
     thanksRefs.modal.classList.add('animate__zoomIn');
@@ -29,10 +28,10 @@ window.addEventListener('DOMContentLoaded', () => {
     btn.addEventListener(
       'click', (event) => {
           event.preventDefault();
-          openThanksModal('[data-backdrop-loved]', 'is-hidden');
-          openThanksModal('[data-backdrop-subscribe]', 'is-hidden');
-          openThanksModal('[data-backdrop-sellers]', 'is-hidden')        
-
+          openThanksModal('[data-backdrop-sellers]');        
+          openThanksModal('[data-backdrop-loved]');
+          openThanksModal('[data-backdrop-subscribe]');
+        console.log('open');
       }
     )
   );
