@@ -9,7 +9,6 @@
   transition: 0.5s;
 }
 .modal {
-
   // pointer-events: none;
   transform: translate(-50%, -50%);
   position: absolute;
@@ -150,6 +149,10 @@
       width: 93px;
       height: 41px;
     }
+  }
+  &__btn:hover {
+    background: $color5;
+    color: $orange;
   }
   textarea {
     width: 100%;

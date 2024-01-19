@@ -120,6 +120,10 @@
     padding: 14px 40px;
     cursor: pointer;
   }
+  &__open-button:hover {
+    background: $orange;
+    color: $white;
+  }
   &__wrapper {
     display: flex;
     align-items: center;
@@ -127,4 +131,7 @@
     margin-top: 50px;
   }
 }
-.is-hidden-loved {pointer-events: none; opacity: 0;}
+.is-hidden-loved {
+  pointer-events: none;
+  opacity: 0;
+}

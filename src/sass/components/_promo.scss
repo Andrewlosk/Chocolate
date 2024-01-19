@@ -75,6 +75,8 @@
   }
   &__btn-buy:hover {
     animation: pulse 2s infinite;
+    background: $color5;
+    color: $orange;
   }
   &__btn-how {
     border: 1px solid $color3;
@@ -82,7 +84,7 @@
     background: transparent;
     cursor: pointer;
 
-    padding: 12px 28px;
+    padding: 12px 39px;
     color: $color3;
     font-size: 14px;
     font-weight: 600;
@@ -94,7 +96,11 @@
     }
   }
   &__btn-how:hover {
-    animation: heartBeat 15s infinite;
+    animation: pulse 2s infinite;
+    border: 1px solid $orange;
+  }
+  &__btn-how-link:hover {
+    color: $orange;
   }
   &__btn-how-link {
     color: $color3;
