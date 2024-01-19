@@ -56,5 +56,16 @@ window.addEventListener('DOMContentLoaded', () => {
     thanksRefs.closeModalBtn.addEventListener('click', () =>
       toggleThanksModal('[data-backdrop-sellers]', 'is-hidden-sellers')
     );
+
+    thanksRefs.openModalBtn.forEach(btn =>
+      btn.addEventListener(
+        'click',
+        toggleThanksModal('[data-backdrop-loved]', 'is-hidden-loved')
+      )
+    );
+
+    thanksRefs.closeModalBtn.addEventListener('click', () =>
+      toggleThanksModal('[data-backdrop-loved]', 'is-hidden-loved')
+    );
   });
 });
