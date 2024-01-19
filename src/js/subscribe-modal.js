@@ -12,6 +12,8 @@ window.addEventListener('DOMContentLoaded', () => {
     refs.modal.classList.toggle('is-hidden');
     refs.modal.classList.add('animate__zoomIn');
     refs.modal.classList.remove('animate__zoomOut');
+
+
   }
   function closeModal() {
     refs.modal.classList.toggle('is-hidden');
