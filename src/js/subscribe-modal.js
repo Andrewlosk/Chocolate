@@ -9,12 +9,12 @@ window.addEventListener('DOMContentLoaded', () => {
   refs.closeModalBtn.addEventListener('click', closeModal);
 
   function openModal() {
-    refs.modal.classList.toggle('is-hidden-subscribe');
+    refs.modal.classList.toggle('is-hidden');
     refs.modal.classList.add('animate__zoomIn');
     refs.modal.classList.remove('animate__zoomOut');
   }
   function closeModal() {
-    refs.modal.classList.toggle('is-hidden-subscribe');
+    refs.modal.classList.toggle('is-hidden');
     refs.modal.classList.remove('animate__zoomIn');
     refs.modal.classList.add('animate__zoomOut');
   }

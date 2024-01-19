@@ -152,7 +152,8 @@
     background-color: #fd9222;
   }
 }
-.is-hidden-loved {
-  pointer-events: none;
-  opacity: 0;
+.reviews__slider {
+  position: relative;
+  overflow: hidden;
 }
+

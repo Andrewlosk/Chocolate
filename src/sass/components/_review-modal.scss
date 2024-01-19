@@ -8,26 +8,13 @@
   z-index: 100;
   transition: 0.5s;
 }
+
 .modal {
-  transform: translate(-50%, -50%);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  border-radius: 15px;
-  background: #fafafa;
-  @media (min-width: 320px) {
-    width: 311px;
-    height: 471px;
-  }
-  @media (min-width: 720px) {
-    width: 517px;
-    height: 631px;
-  }
 
   &__sudtitle {
     color: #111;
     font-family: Montserrat;
-    font-size: 24px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 600;
     line-height: 24px;
@@ -40,135 +27,20 @@
       font-size: 14px;
     }
     @media (min-width: 768px) {
-      // margin-left: 40px;
-      font-size: 18px;
-    }
-  }
-  &__call {
-    box-sizing: border-box;
-    border-radius: 13px;
-    border: 1.5px solid rgba(17, 17, 17, 0.05);
-    align-items: center;
-    background: #fff;
-    display: flex;
-    @media (min-width: 320px) {
-      width: 263px;
-      padding: 14px 18px;
-      // margin-right: 34px;
-    }
-    @media (min-width: 768px) {
-      width: 437px;
-      padding: 17px 23px;
-    }
-  }
-  &__placeholder {
-    color: #000;
-    font-family: Montserrat;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: -0.28px;
-    padding-right: 40px;
-    display: flex;
-    align-items: center;
-    gap: 18px;
-    border-right: 1px solid #d8d6d6;
-    @media (min-width: 320px) {
-      font-size: 14px;
-      padding-right: 30px;
-    }
-    @media (min-width: 768px) {
-      font-size: 18px;
-    }
-  }
+      font-size: 24px;
 
-  &__tel {
-    border: none;
-    color: rgba(64, 64, 64, 0.3);
-    font-family: Montserrat;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: -0.36px;
-    height: 22px;
-    outline: none;
-    padding-left: 28px;
-    width: 100%;
-    border-radius: 13px;
-    box-sizing: border-box;
-    @media (min-width: 320px) {
-      font-size: 14px;
-    }
-    @media (min-width: 768px) {
-      font-size: 18px;
+      line-height: 28px;
+      letter-spacing: -0.72px;
     }
   }
-  &__thirdform::after {
-    content: '';
-    width: 2px;
-    height: 32px;
-    background: rgba(64, 64, 64, 0.3);
-    position: absolute;
-    left: 23%;
-    top: 25%;
-  }
-
-  &__thirdnum {
-    color: #000;
-    font-family: Montserrat;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: -0.36px;
-    margin: 0;
-    margin-left: 18px;
-    margin-right: 60px;
-  }
-  &__input {
-    font-family: Montserrat;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: -0.36px;
-    padding: 22px 24px;
-    border-radius: 13px;
-    box-sizing: border-box;
-    width: 100%;
-    border: 1.5px solid rgba(17, 17, 17, 0.05);
-    box-shadow: 0px 5.445px 5.445px 0px rgba(0, 0, 0, 0.03);
-    @media (min-width: 320px) {
-      font-size: 14px;
-      padding: 14px 15px;
-    }
-    @media (min-width: 768px) {
-      font-size: 18px;
-      padding: 22px 24px;
-    }
-  }
-  &__form {
-    display: flex;
-    align-items: start;
-    flex-direction: column;
-    width: 437px;
-    gap: 19px;
-    @media (min-width: 320px) {
-      width: 263px;
-      padding-right: 14px;
-    }
-    @media (min-width: 768px) {
-      width: 437px;
-      padding-left: -68px;
-    }
-  }
+ 
   &__btn {
     @include button;
     border: 0;
     width: 117px;
     height: 45px;
+    margin-top: 18px;
+    padding: 0;
     @media (max-width: 480px) {
       width: 93px;
       height: 41px;
@@ -207,19 +79,6 @@
 
   &__span {
     color: #fd9222;
-    font-family: Montserrat;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 24px;
-    letter-spacing: -0.6px;
-    text-transform: uppercase;
-    @media (min-width: 320px) {
-      font-size: 14px;
-    }
-    @media (min-width: 768px) {
-      font-size: 18px;
-    }
   }
 }
 .is-hidden-thanks {
@@ -241,16 +100,49 @@ textarea {
   line-height: normal;
   letter-spacing: -0.36px;
   padding-top: 22px;
-  padding-left: 24px;
+  width: 100%;
   @media (min-width: 320px) {
     height: 91px;
-    width: 263px;
     font-size: 14px;
     padding-right: 34px;
   }
   @media (min-width: 768px) {
     height: 137px;
-    width: 437px;
     font-size: 18px;
+  }
+}
+
+.modal-loved__input {
+  width: 100%;
+}
+.modal-loved__num {
+  margin-right: 25px;
+}
+
+.modal-loved__thirdform {
+  &::after {
+    left: 44%;
+    @media (min-width: 720px) {
+      left: 24%;
+    }
+    @media (min-width: 768px) {
+      left: 32%;
+    }
+  }
+}
+.loved__modal {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 15px;
+  background: #fafafa;
+  @media (min-width: 320px) {
+    width: 311px;
+    height: 471px;
+  }
+  @media (min-width: 720px) {
+    width: 517px;
+    height: 631px;
   }
 }

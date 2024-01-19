@@ -1,0 +1,177 @@
+<div class="modal__overlay  animate__animated is-hidden" data-backdrop-sellers >
+  <div class="modal" >
+    <button class="modal__cbtn close_modal" data-close-sellers >
+      <img src="./images/sellersico/close-modal.svg" alt="close" />
+    </button>
+
+    <h2 class="sellers__title modal__title">
+      <span class="sellers__span">bUY</span> nOW
+    </h2>
+
+    <ul class="modal__imglist">
+      <li class="modal__item">
+        <button class="modal__btnblock">
+          <img
+            loading="lazy"
+            src="./images/sellers/1choc_modal.png"
+            alt="chocolate"
+          />
+          <div class="modal__weightblock">
+            <p class="modal__weight">100 g</p>
+          </div>
+        </button>
+      </li>
+      <li class="modal__item">
+        <button class="modal__btnblock">
+          <img
+            loading="lazy"
+            src="./images/sellers/2choc_modal.png"
+            alt="chocolate"
+          />
+          <div class="modal__weightblock">
+            <p class="modal__weight">200 g</p>
+          </div>
+        </button>
+      </li>
+      <li class="modal__item">
+        <button class="modal__btnblock">
+          <img
+            loading="lazy"
+            src="./images/sellers/3choc_modal.png"
+            alt="chocolate"
+          />
+          <div class="modal__weightblock">
+            <p class="modal__weight">300 g</p>
+          </div>
+        </button>
+      </li>
+    </ul>
+
+    <ul class="modal__moblist slick__slider">
+      <li class="modal__item modal__mobitem">
+        <button class="modal__btnblock">
+          <img
+            class="modal__img"
+            src="./images/sellers/1choc_modal.png"
+            alt="chocolate"
+          />
+          <div class="modal__weightblock">
+            <p class="modal__weight">100 g</p>
+          </div>
+        </button>
+      </li>
+      <li class="modal__item modal__mobitem">
+        <button class="modal__btnblock">
+          <img
+            class="modal__img"
+            src="./images/sellers/2choc_modal.png"
+            alt="chocolate"
+          />
+          <div class="modal__weightblock">
+            <p class="modal__weight">200 g</p>
+          </div>
+        </button>
+      </li>
+      <li class="modal__item modal__mobitem">
+        <button class="modal__btnblock">
+          <img
+            class="modal__img"
+            src="./images/sellers/3choc_modal.png"
+            alt="chocolate"
+          />
+          <div class="modal__weightblock">
+            <p class="modal__weight">300 g</p>
+          </div>
+        </button>
+      </li>
+    </ul>
+
+    <form class="modal__formgroup" id="modal-form">
+      <label class="modal__namelable" for="name">Personal information</label>
+      <div class="modal__firstform">
+        <input
+          type="text"
+          class="modal__inp_name"
+          placeholder="Name"
+          minlength="2"
+          name="name"
+          id="name"
+          autocomplete="given-name"
+        />
+        <input
+          type="text"
+          class="modal__inp_name"
+          placeholder="Surname"
+          minlength="2"
+          name="surname"
+          id="surname"
+          autocomplete="family-name"
+        />
+      </div>
+    
+      <label class="modal__namelable" for="email">Email</label>
+      <div class="modal__secondform">
+        <input
+          type="text"
+          class="modal__inputsec"
+          placeholder="Enter your email"
+          minlength="8"
+          name="email"
+          id="email"
+          autocomplete="email"
+        />
+      </div>
+    
+      <label class="modal__namelable" for="phone">Phone number</label>
+      <div class="modal__thirdform">
+        <img src="./images/sellersico/ua_flag.svg" alt="flag" />
+        <p class="modal__thirdnum">+380</p>
+        <input
+          type="text"
+          class="modal__inputthird"
+          placeholder="Phone number"
+          minlength="5"
+          maxlength="18"
+          name="phone"
+          id="phone"
+          autocomplete="tel"
+        />
+      </div>
+    
+      <label class="modal__namelable" for="card">Card number</label>
+      <div class="modal__secondform modal__fourthform">
+        <input
+          type="text"
+          class="modal__inputsec"
+          placeholder="Enter card"
+          minlength="7"
+          name="card"
+          id="card"
+          autocomplete="cc-number"
+        />
+        <img
+          class="modal__мastercard"
+          src="./images/sellersico/мastercard.svg"
+          alt="мastercard"
+        />
+      </div>
+    
+      <div class="modal__fifthform">
+        <label class="modal__namelable" for="comment">Comment</label>
+        <textarea
+          name="comment"
+          id="comment"
+          class="modal__textarea"
+          placeholder="Enter text"
+          autocomplete="off"
+        ></textarea>
+      </div>
+    
+      <button class="sellers__btn modal__btn" data-open-thanks>Submit</button>
+    </form>
+    
+    
+    
+    
+  </div>
+</div>

@@ -1,54 +1,61 @@
 window.addEventListener('DOMContentLoaded', () => {
   const thanksRefs = {
-    openModalBtn: document.querySelector('[data-open-thanks]'),
+    openModalBtn: document.querySelectorAll('[data-open-thanks]'),
     closeModalBtn: document.querySelector('[data-close-thanks]'),
     modal: document.querySelector('[data-backdrop-thanks]'),
   };
 
-  function toggleThanksModal(backdrop, hiddenClass) {
+
+  function openThanksModal(backdrop) {
     const modal = document.querySelector(backdrop);
-
-    function openThanksModal() {
-      modal.classList.add();
-      modal.classList.add('animate__zoomOut');
-      modal.classList.remove('animate__zoomIn');
-      thanksRefs.modal.classList.remove('is-hidden-thanks');
-      thanksRefs.modal.classList.add('animate__zoomIn');
-      thanksRefs.modal.classList.remove('animate__zoomOut');
-    }
-
-    function closeThanksModal() {
-      thanksRefs.modal.classList.add('is-hidden-thanks');
-      thanksRefs.modal.classList.remove('animate__zoomIn');
-      thanksRefs.modal.classList.add('animate__zoomOut');
-    }
-
-    thanksRefs.openModalBtn.addEventListener('click', () =>
-      openThanksModal(backdrop, hiddenClass)
-    );
-    thanksRefs.closeModalBtn.addEventListener('click', () =>
-      closeThanksModal(backdrop, hiddenClass)
-    );
+    modal.classList.add('is-hidden');
+    modal.classList.remove('animate__zoomIn');
+    thanksRefs.modal.classList.remove('is-hidden-thanks');
+    thanksRefs.modal.classList.add('animate__zoomIn');
+    thanksRefs.modal.classList.remove('animate__zoomOut');
   }
 
-  toggleThanksModal('[data-backdrop-subscribe]', 'is-hidden-subscribe');
-  toggleThanksModal('[data-backdrop-sellers]', 'is-hidden-sellers');
+  function closeThanksModal() {
+    thanksRefs.modal.classList.add('is-hidden-thanks');
+    thanksRefs.modal.classList.remove('animate__zoomIn');
+    thanksRefs.modal.classList.add('animate__zoomOut');
+  }
 
-  thanksRefs.openModalBtn.addEventListener('click', function (event) {
-    event.preventDefault();
 
-    thanksRefs.openModalBtn.addEventListener('click', () =>
-      toggleThanksModal('[data-backdrop-subscribe]', 'is-hidden-subscribe')
-    );
-    thanksRefs.closeModalBtn.addEventListener('click', () =>
-      toggleThanksModal('[data-backdrop-subscribe]', 'is-hidden-subscribe')
-    );
 
-    thanksRefs.openModalBtn.addEventListener('click', () =>
-      toggleThanksModal('[data-backdrop-sellers]', 'is-hidden-sellers')
-    );
-    thanksRefs.closeModalBtn.addEventListener('click', () =>
-      toggleThanksModal('[data-backdrop-sellers]', 'is-hidden-sellers')
-    );
-  });
+
+  thanksRefs.openModalBtn.forEach(btn =>
+    btn.addEventListener(
+      'click', (event) => {
+          event.preventDefault();
+          openThanksModal('[data-backdrop-sellers]');        
+          openThanksModal('[data-backdrop-loved]');
+          openThanksModal('[data-backdrop-subscribe]');
+        console.log('open');
+      }
+    )
+  );
+
+  // thanksRefs.openModalBtn.forEach(btn =>
+  //   btn.addEventListener(
+  //     'click', (event) => {
+  //         event.preventDefault();
+
+  //       openThanksModal('[data-backdrop-loved]', 'is-hidden-loved');
+
+  //     }
+  //   )
+  // );
+
+  // thanksRefs.openModalBtn.forEach(btn =>
+  //   btn.addEventListener('click', (event) => {
+  //     event.preventDefault();
+
+  //     openThanksModal('[data-backdrop-subscribe]', 'is-hidden-subscribe')
+
+  //   }
+  //   )
+  // );
+
+  thanksRefs.closeModalBtn.addEventListener('click', closeThanksModal);
 });
