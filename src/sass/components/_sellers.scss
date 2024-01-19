@@ -34,10 +34,11 @@
 
     justify-content: center;
     margin: 0 auto;
-    @media (min-width: 320px) {
-      // width: 335px;
-      flex-wrap: wrap;
-      margin-bottom: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    @media (min-width: 375px) {
+      width: 335px;
+
     }
     @media (min-width: 768px) {
       width: auto;
