@@ -1,7 +1,9 @@
+
+
 window.addEventListener('DOMContentLoaded', () => {
-  // order-modal
+
   const refs = {
-    openModalBtn: document.querySelectorAll('[data-open-loved]'),
+    openModalBtn: document.querySelector('[data-open-loved]'),
     closeModalBtn: document.querySelector('[data-close-loved]'),
     modal: document.querySelector('[data-backdrop-loved]'),
   };
@@ -19,6 +21,6 @@ window.addEventListener('DOMContentLoaded', () => {
     refs.modal.classList.add('animate__zoomOut');
   }
 
-  refs.openModalBtn.forEach(btn => btn.addEventListener('click', openModal));
+  refs.openModalBtn.addEventListener('click', openModal);
 
 });
