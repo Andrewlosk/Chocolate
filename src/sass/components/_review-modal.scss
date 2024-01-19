@@ -33,14 +33,11 @@
     line-height: 24px;
     letter-spacing: -0.6px;
     text-transform: uppercase;
-    margin-left: 40px;
-    margin-top: 40px;
+
     @media (min-width: 320px) {
-      margin-left: 24px;
       font-size: 14px;
     }
     @media (min-width: 768px) {
-      margin-left: 40px;
       font-size: 18px;
     }
   }
@@ -155,11 +152,9 @@
     gap: 19px;
     @media (min-width: 320px) {
       width: 263px;
-      padding-left: 24px;
     }
     @media (min-width: 768px) {
       width: 437px;
-      padding-left: 40px;
     }
   }
   &__btn {
@@ -242,12 +237,14 @@ textarea {
   padding-left: 24px;
   @media (min-width: 320px) {
     height: 91px;
-    width: 235px;
+    width: 263px;
+    padding: 14px 18px 60px 18px;
     font-size: 14px;
   }
   @media (min-width: 768px) {
     height: 137px;
-    width: 410px;
+    width: 437px;
+    padding: 22px 24px 93px 24px;
     font-size: 18px;
   }
 }
