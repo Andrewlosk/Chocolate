@@ -1,6 +1,14 @@
 html {
   scroll-behavior: smooth;
 }
+body::-webkit-scrollbar {
+  width: 8px;
+  background: linear-gradient($color5, $color5);
+}
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient($orange, $orange);
+  border-radius: 7px;
+}
 .container {
   margin: 0 auto;
   @media (min-width: 320px) {
