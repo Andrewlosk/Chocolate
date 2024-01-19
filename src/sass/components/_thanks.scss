@@ -16,17 +16,8 @@
     height: 350px;
     left: 50%;
     transform: translate(-50%, -50%);
-    @media (min-width: 375px) {
+    @media (max-width: 480px) {
       width: 311px;
-      height: 320px;
-    }
-    @media (min-width: 768px) {
-      width: 538px;
-    
-    }
-    @media (min-width: 1200px) {
-      width: 538px;
-      height: 412px;
     }
   }
   img {
@@ -40,14 +31,9 @@
   &__from {
     display: flex;
     justify-content: flex-end;
-    padding-right: 49px;
-    padding-top: 76px;
+    padding-top: 34px;
     @media (max-width: 480px) {
       padding-top: 35px;
-      padding-right: 0;
-    }
-    @media (max-width: 768px) {
-    
     }
   }
 
