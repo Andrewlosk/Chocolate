@@ -120,15 +120,12 @@
     overflow: hidden;
   }
   .swiper__pagination {
-    display: flex;
-    justify-content: center;
-
-    margin: auto;
+    position: absolute;
+    text-align: center;
     gap: 13px;
-
-    margin-top: 20px;
+    margin-top: 50px;
     @media (min-width: 375px) {
-      margin-top: 20px;
+      margin-top: 60px;
     }
     @media (min-width: 768px) {
       margin-top: 32px;
@@ -156,4 +153,3 @@
   position: relative;
   overflow: hidden;
 }
-
