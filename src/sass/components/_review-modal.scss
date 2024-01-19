@@ -11,7 +11,6 @@
 
 .modal {
 
-
   &__sudtitle {
     color: #111;
     font-family: Montserrat;
@@ -21,7 +20,12 @@
     line-height: 24px;
     letter-spacing: -0.6px;
     text-transform: uppercase;
-
+    // margin-left: 40px;
+    margin-top: 40px;
+    @media (min-width: 320px) {
+      // margin-left: 24px;
+      font-size: 14px;
+    }
     @media (min-width: 768px) {
       font-size: 24px;
 
@@ -29,124 +33,7 @@
       letter-spacing: -0.72px;
     }
   }
-  // &__call {
-  //   box-sizing: border-box;
-  //   border-radius: 13px;
-  //   border: 1.5px solid rgba(17, 17, 17, 0.05);
-  //   align-items: center;
-  //   background: #fff;
-  //   display: flex;
-  //   @media (min-width: 320px) {
-  //     width: 263px;
-  //     padding: 14px 18px;
-  //   }
-  //   @media (min-width: 768px) {
-  //     width: 437px;
-  //     padding: 17px 24px;
-  //   }
-  // }
-  // &__placeholder {
-  //   color: #000;
-  //   font-family: Montserrat;
-  //   font-size: 18px;
-  //   font-style: normal;
-  //   font-weight: 500;
-  //   line-height: normal;
-  //   letter-spacing: -0.28px;
-  //   padding-right: 40px;
-  //   display: flex;
-  //   align-items: center;
-  //   gap: 18px;
-  //   border-right: 1px solid #d8d6d6;
-  //   @media (min-width: 320px) {
-  //     font-size: 14px;
-  //     padding-right: 30px;
-  //   }
-  //   @media (min-width: 768px) {
-  //     font-size: 18px;
-  //   }
-  // }
-
-  // &__tel {
-  //   border: none;
-  //   color: rgba(64, 64, 64, 0.3);
-  //   font-family: Montserrat;
-  //   font-size: 18px;
-  //   font-style: normal;
-  //   font-weight: 400;
-  //   line-height: normal;
-  //   letter-spacing: -0.36px;
-  //   height: 22px;
-  //   outline: none;
-  //   padding-left: 28px;
-  //   width: 100%;
-  //   border-radius: 13px;
-  //   box-sizing: border-box;
-  //   @media (min-width: 320px) {
-  //     font-size: 14px;
-  //   }
-  //   @media (min-width: 768px) {
-  //     font-size: 18px;
-  //   }
-  // }
-  // &__thirdform::after {
-  //   content: '';
-  //   width: 2px;
-  //   height: 32px;
-  //   background: rgba(64, 64, 64, 0.3);
-  //   position: absolute;
-  //   left: 23%;
-  //   top: 25%;
-  // }
-
-  // &__thirdnum {
-  //   color: #000;
-  //   font-family: Montserrat;
-  //   font-size: 18px;
-  //   font-style: normal;
-  //   font-weight: 500;
-  //   line-height: normal;
-  //   letter-spacing: -0.36px;
-  //   margin: 0;
-  //   margin-left: 18px;
-  //   margin-right: 60px;
-  // }
-  // &__input {
-  //   font-family: Montserrat;
-  //   font-size: 18px;
-  //   font-style: normal;
-  //   font-weight: 400;
-  //   line-height: normal;
-  //   letter-spacing: -0.36px;
-  //   padding: 22px 24px;
-  //   border-radius: 13px;
-  //   box-sizing: border-box;
-  //   width: 100%;
-  //   border: 1.5px solid rgba(17, 17, 17, 0.05);
-  //   box-shadow: 0px 5.445px 5.445px 0px rgba(0, 0, 0, 0.03);
-  //   @media (min-width: 320px) {
-  //     font-size: 14px;
-  //     padding: 14px 15px;
-  //   }
-  //   @media (min-width: 768px) {
-  //     font-size: 18px;
-  //     padding: 22px 24px;
-  //   }
-  // }
-  // &__form {
-  //   display: flex;
-  //   align-items: start;
-  //   flex-direction: column;
-  //   gap: 19px;
-  //   @media (min-width: 320px) {
-  //     width: 263px;
-  //     padding-left: 24px;
-  //   }
-  //   @media (min-width: 768px) {
-  //     width: 437px;
-  //     padding-left: 40px;
-  //   }
-  // }
+ 
   &__btn {
     @include button;
     border: 0;
@@ -214,15 +101,13 @@ textarea {
   letter-spacing: -0.36px;
   padding-top: 22px;
   width: 100%;
-  // padding-left: 24px;
   @media (min-width: 320px) {
     height: 91px;
-    // width: 235px;
     font-size: 14px;
+    padding-right: 34px;
   }
   @media (min-width: 768px) {
     height: 137px;
-    // width: 410px;
     font-size: 18px;
   }
 }
